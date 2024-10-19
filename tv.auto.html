@@ -11,8 +11,9 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #f0f0f0;
+            margin: 0;
         }
 
         .login-container {
@@ -21,6 +22,8 @@
             padding: 20px;
             border: 1px solid #ddd;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
         }
 
         .login-container input {
@@ -38,6 +41,7 @@
             border: none;
             cursor: pointer;
             font-size: 16px;
+            width: 100%;
         }
 
         .login-container button:hover {
@@ -45,10 +49,11 @@
         }
 
         .grid-container {
-            display: none; /* Se oculta hasta que se loguee */
-            grid-template-columns: repeat(4, 1fr);
+            display: none;
+            grid-template-columns: repeat(2, 1fr); /* Configuración predeterminada para móviles */
             gap: 20px;
             max-width: 1000px;
+            width: 90%;
             margin-top: 20px;
         }
 
@@ -62,7 +67,7 @@
 
         .grid-item img {
             width: 100%;
-            height: 200px;
+            height: 150px;
             object-fit: cover;
         }
 
@@ -84,12 +89,33 @@
             display: none;
             margin-top: 20px;
             width: 100%;
-            height: 500px;
+            height: 300px;
         }
 
         #video-player {
             width: 100%;
             height: 100%;
+        }
+
+        /* Media Queries para pantallas más grandes */
+        @media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr); /* Configuración para tabletas */
+            }
+
+            #video-player-container {
+                height: 400px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr); /* Configuración para pantallas grandes */
+            }
+
+            #video-player-container {
+                height: 500px;
+            }
         }
     </style>
     <script>

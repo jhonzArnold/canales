@@ -359,9 +359,9 @@
                     </div>
                     <!-- Canal 2 -->
                     <div class="grid-item">
-                        <img src="gol.jpg" alt="Gol Perú">
-                        <h4>Gol Perú</h4>
-                        <button onclick="loadVideo('https://betzta.com/canales.php?stream=golperu')">Ver canal</button>
+                        <img src="exitosa.jpg" alt="Exitosa">
+                        <h4>Exitosa</h4>
+                        <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?get=Ly9sdW5hLTEtdmlkZW8ubWVkaWFzZXJ2ZXIuZGlnaXRhbC9leGl0b3NhdHZfMjMzYi00YjQ5LWE3MjYtNWEzY2IwZTMyNDNjL2luZGV4LmZtcDQubTN1OA==')">Ver canal</button>
                     </div>
                     <!-- Canal 3 -->
                     <div class="grid-item">
@@ -405,7 +405,7 @@
         <!-- Lista de Canales dentro del reproductor -->
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
-            <button onclick="loadVideo('https://betzta.com/canales.php?stream=golperu')">Gol Perú</button>
+            <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?get=Ly9sdW5hLTEtdmlkZW8ubWVkaWFzZXJ2ZXIuZGlnaXRhbC9leGl0b3NhdHZfMjMzYi00YjQ5LWE3MjYtNWEzY2IwZTMyNDNjL2luZGV4LmZtcDQubTN1OA==')">Exitosa</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
         </div>
     </div>

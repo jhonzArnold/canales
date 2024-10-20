@@ -263,12 +263,12 @@
             // Eliminar el sandbox solo si es Gol Perú
             if (url === 'https://betzta.com/canales.php?stream=golperu') {
                 iframe.removeAttribute('sandbox');
+                // Solución temporal para evitar redirecciones
+                window.open(url, '_self'); 
             } else {
                 iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
+                iframe.src = url;
             }
-
-            // Establece la URL del video con reproducción automática
-            iframe.src = url;
 
             // Mostrar el reproductor
             videoPlayerContainer.classList.add('active');

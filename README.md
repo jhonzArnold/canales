@@ -343,8 +343,8 @@
                 <div class="grid-container">
                     <!-- Canal 1 -->
                     <div class="grid-item">
-                        <img src="descarga.jfif" alt="Canal 1">
-                        <h4>Canal 1</h4>
+                        <img src="descarga.jfif" alt="Willax">
+                        <h4>Willax</h4>
                         <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Ver canal</button>
                     </div>
                     <!-- Canal 2 -->
@@ -355,8 +355,8 @@
                     </div>
                     <!-- Canal 3 -->
                     <div class="grid-item">
-                        <img src="dd.jfif" alt="Canal 3">
-                        <h4>Canal 3</h4>
+                        <img src="dd.jfif" alt="Latina">
+                        <h4>Latina</h4>
                         <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Ver canal</button>
                     </div>
                 </div>
@@ -369,7 +369,7 @@
                     <div class="grid-item">
                         <img src="descarga.jfif" alt="Película 1">
                         <h4>Película 1</h4>
-                        <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Ver película</button>
+                        <button onclick="loadVideo('https://nuuuppp.pro/watch/7kz7jIHYMkPnCGUQ5OVCQ3jz3s7kz70Y8cv7kz7kU4p45xzpNojXZmI?h=')">Ver película</button>
                     </div>
                     <div class="grid-item">
                         <img src="aa.jfif" alt="Película 2">
@@ -394,12 +394,11 @@
 
         <!-- Lista de Canales dentro del reproductor -->
         <div class="channel-list">
-            <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Canal 1</button>
+            <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
             <button onclick="loadVideo('https://betzta.com/canales.php?stream=america')">Canal 2</button>
-            <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Canal 3</button>
+            <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
         </div>
     </div>
 </body>
 </html>
-
 

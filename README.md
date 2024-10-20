@@ -380,9 +380,9 @@
                         <button onclick="loadVideo('https://vidhidepro.com/v/p6zkbptnjokx')">Ver película</button>
                     </div>
                     <div class="grid-item">
-                        <img src="terr.jpg" alt="Terriefer 3">
-                        <h4>Terriefer 3</h4>
-                        <button onclick="loadVideo('https://waaw.to/f/XXXvHS7507zt')">Ver película</button>
+                        <img src="al.jpeg" alt="Alien: Romulus">
+                        <h4>Alien: Romulus</h4>
+                        <button onclick="loadVideo('https://vidhidepro.com/v/xhzx133jvb6t')">Ver película</button>
                     </div>
                 </div>
             </div>
@@ -404,4 +404,3 @@
     </div>
 </body>
 </html>
-

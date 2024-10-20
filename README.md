@@ -255,17 +255,13 @@
             }
         }
 
-        // Función para Cargar Video
+        // Función para Cargar Video con sandbox
         function loadVideo(url) {
             var videoPlayerContainer = document.getElementById('video-player-container');
             var iframe = document.getElementById('video-player');
-
-            // Eliminar el sandbox solo si es Gol Perú
-            if (url === 'https://betzta.com/canales.php?stream=golperu') {
-                iframe.removeAttribute('sandbox');
-            } else {
-                iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
-            }
+            
+            // Aplicar sandbox para todos los videos
+            iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
 
             // Establece la URL del video con reproducción automática
             iframe.src = url;
@@ -273,7 +269,7 @@
             // Mostrar el reproductor
             videoPlayerContainer.classList.add('active');
 
-            // Solicitar orientación horizontal (no siempre posible)
+            // Solicitar orientación horizontal
             if (screen.orientation && screen.orientation.lock) {
                 screen.orientation.lock('landscape').catch(function(error) {
                     console.error('Error al bloquear la orientación:', error);
@@ -397,7 +393,7 @@
     <div id="video-player-container">
         <button class="close-button" onclick="closeVideo()">✖</button>
         <button class="show-channels-button" onclick="toggleChannelList()">📺</button>
-        <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
+        <iframe id="video-player" sandbox="allow-same-origin allow-scripts allow-autoplay" frameborder="0" allowfullscreen></iframe>
 
         <!-- Lista de Canales dentro del reproductor -->
         <div class="channel-list">

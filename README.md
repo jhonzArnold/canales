@@ -258,15 +258,19 @@
             }
         }
 
-        // Función para Cargar Video con sandbox
+        // Función para Cargar Video sin sandbox para ciertos canales
         function loadVideo(url) {
             var videoPlayerContainer = document.getElementById('video-player-container');
             var iframe = document.getElementById('video-player');
             
-            // Aplicar sandbox para todos los videos
-            iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
+            // Remover sandbox para algunos canales específicos
+            if (url.includes('golperu') || url.includes('latina')) {
+                iframe.removeAttribute('sandbox');
+            } else {
+                iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
+            }
 
-            // Establece la URL del video con reproducción automática
+            // Establecer la URL del video con reproducción automática
             iframe.src = url;
 
             // Mostrar el reproductor
@@ -357,7 +361,7 @@
                     <div class="grid-item">
                         <img src="gol.jpg" alt="Gol Perú">
                         <h4>Gol Perú</h4>
-                        <button onclick="loadVideo('https://www.gol12.com/vivo/canales.php?stream=golperu')">Ver canal</button>
+                        <button onclick="loadVideo('https://betzta.com/canales.php?stream=golperu')">Ver canal</button>
                     </div>
                     <!-- Canal 3 -->
                     <div class="grid-item">
@@ -396,7 +400,7 @@
     <div id="video-player-container">
         <button class="close-button" onclick="closeVideo()">✖</button>
         <button class="show-channels-button" onclick="toggleChannelList()">📺</button>
-        <iframe id="video-player" sandbox="allow-same-origin allow-scripts allow-autoplay" frameborder="0" allowfullscreen></iframe>
+        <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
 
         <!-- Lista de Canales dentro del reproductor -->
         <div class="channel-list">

@@ -373,7 +373,7 @@
                     <div class="grid-item">
                         <img src="pana.jpg" alt="panamericana">
                         <h4>panamericana</h4>
-                        <button onclick="loadVideo('https://player.twitch.tv/?channel=panamericanatvpe&muted=false&parent=panamericana.pe')">Ver canal</button>
+                        <button onclick="loadVideo('https://iptv-web.app/PE/PanamericanaTV.pe/')">Ver canal</button>
                     </div>
                 </div>
             </div>
@@ -444,5 +444,3 @@
     </div>
 </body>
 </html>
-
-

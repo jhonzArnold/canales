@@ -258,12 +258,12 @@
             }
         }
 
-        // Función para Cargar Video en pantalla completa y orientación horizontal
+        // Función para Cargar Video sin sandbox para ciertos canales
         function loadVideo(url) {
             var videoPlayerContainer = document.getElementById('video-player-container');
             var iframe = document.getElementById('video-player');
             
-            // Remover sandbox para algunos canales específicos si es necesario
+            // Remover sandbox para algunos canales específicos
             if (url.includes('golperu') || url.includes('latina')) {
                 iframe.removeAttribute('sandbox');
             } else {
@@ -283,24 +283,11 @@
                 });
             }
 
-            // Entrar en pantalla completa
+            // Entrar en fullscreen
             enterFullScreen(videoPlayerContainer);
         }
 
-        // Función para entrar en pantalla completa
-        function enterFullScreen(element) {
-            if (element.requestFullscreen) {
-                element.requestFullscreen();
-            } else if (element.mozRequestFullScreen) { // Firefox
-                element.mozRequestFullScreen();
-            } else if (element.webkitRequestFullscreen) { // Chrome, Safari, Opera
-                element.webkitRequestFullscreen();
-            } else if (element.msRequestFullscreen) { // IE/Edge
-                element.msRequestFullscreen();
-            }
-        }
-
-        // Función para cerrar el video
+        // Función para Cerrar el Video
         function closeVideo() {
             var videoPlayerContainer = document.getElementById('video-player-container');
             var iframe = document.getElementById('video-player');
@@ -311,14 +298,14 @@
             // Detener el video
             iframe.src = "";
 
-            // Salir de pantalla completa
+            // Salir de fullscreen
             if (document.fullscreenElement) {
                 document.exitFullscreen().catch(err => {
                     console.error('Error al salir de fullscreen:', err);
                 });
             }
 
-            // Desbloquear la orientación
+            // Desbloquear orientación
             if (screen.orientation && screen.orientation.unlock) {
                 screen.orientation.unlock().catch(function(error) {
                     console.error('Error al desbloquear la orientación:', error);
@@ -332,6 +319,18 @@
             channelList.classList.toggle('active');
         }
 
+        // Función para Entrar en Fullscreen
+        function enterFullScreen(element) {
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            } else if (element.mozRequestFullScreen) { // Firefox
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullscreen) { // Chrome, Safari, Opera
+                element.webkitRequestFullscreen();
+            } else if (element.msRequestFullscreen) { // IE/Edge
+                element.msRequestFullscreen();
+            }
+        }
     </script>
 </head>
 <body>
@@ -362,7 +361,7 @@
                     <div class="grid-item">
                         <img src="gol.jpg" alt="Gol Perú">
                         <h4>Gol Perú</h4>
-                        <button onclick="loadVideo('https://www.gol12.com/vivo/canales.php?stream=golperu')">Ver canal</button>
+                        <button onclick="loadVideo('https://betzta.com/canales.php?stream=golperu')">Ver canal</button>
                     </div>
                     <!-- Canal 3 -->
                     <div class="grid-item">
@@ -401,12 +400,12 @@
     <div id="video-player-container">
         <button class="close-button" onclick="closeVideo()">✖</button>
         <button class="show-channels-button" onclick="toggleChannelList()">📺</button>
-        <iframe id="video-player" sandbox="allow-same-origin allow-scripts allow-autoplay" frameborder="0" allowfullscreen></iframe>
+        <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
 
         <!-- Lista de Canales dentro del reproductor -->
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
-            <button onclick="loadVideo('https://www.gol12.com/vivo/canales.php?stream=golperu')">Gol Perú</button>
+            <button onclick="loadVideo('https://betzta.com/canales.php?stream=golperu')">Gol Perú</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
         </div>
     </div>

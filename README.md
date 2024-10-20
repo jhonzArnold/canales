@@ -105,7 +105,7 @@
             background-color: rgba(255, 255, 255, 0.9);
             width: 200px;
             padding: 10px;
-            display: none;
+            display: block;
         }
 
         .channel-list h3 {
@@ -164,19 +164,28 @@
         function loadVideo(url) {
             var videoPlayerContainer = document.getElementById('video-player-container');
             var iframe = document.getElementById('video-player');
-            var channelList = document.querySelector('.channel-list');
 
             // Establece la URL del video con reproducción automática
-            iframe.src = url + "&autoplay=1&muted=0";
+            iframe.src = url + "&autoplay=1";
 
             // Mostrar el reproductor
             videoPlayerContainer.style.display = 'block';
 
-            // Mostrar la lista de canales
-            channelList.style.display = 'block';
-
-            // Esperar a que el iframe se cargue y ponerlo en pantalla completa
+            // Esperar a que el iframe se cargue
             iframe.onload = function() {
+                try {
+                    var playerWindow = iframe.contentWindow;
+                    if (playerWindow && playerWindow.document) {
+                        var video = playerWindow.document.querySelector('video');
+                        if (video) {
+                            video.volume = 1.0; // Subir el volumen al 100%
+                            video.play(); // Reproducir automáticamente
+                        }
+                    }
+                } catch (error) {
+                    console.error('Error al ajustar el volumen del video:', error);
+                }
+
                 requestFullScreen(videoPlayerContainer);
             };
         }

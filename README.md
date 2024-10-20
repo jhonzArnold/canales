@@ -261,7 +261,7 @@
             var iframe = document.getElementById('video-player');
 
             // Establece la URL del video con reproducción automática
-            iframe.src = url + "&autoplay=1";
+            iframe.src = url;
 
             // Mostrar el reproductor
             videoPlayerContainer.classList.add('active');
@@ -390,12 +390,12 @@
     <div id="video-player-container">
         <button class="close-button" onclick="closeVideo()">✖</button>
         <button class="show-channels-button" onclick="toggleChannelList()">📺</button>
-        <iframe id="video-player" sandbox="allow-same-origin allow-scripts allow-autoplay" frameborder="0" allowfullscreen></iframe>
+        <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
 
         <!-- Lista de Canales dentro del reproductor -->
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
-            <button onclick="loadVideo('https://betzta.com/canales.php?stream=america')">Canal 2</button>
+            <button onclick="loadVideo('https://betzta.com/canales.php?stream=golperu')">Gol Perú</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
         </div>
     </div>

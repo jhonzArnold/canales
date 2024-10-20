@@ -50,7 +50,7 @@
 
         .grid-container {
             display: none;
-            grid-template-columns: repeat(2, 1fr); /* Configuración predeterminada para móviles */
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             max-width: 1000px;
             width: 90%;
@@ -95,12 +95,13 @@
         #video-player {
             width: 100%;
             height: 100%;
+            border: 0;
         }
 
         /* Media Queries para pantallas más grandes */
         @media (min-width: 768px) {
             .grid-container {
-                grid-template-columns: repeat(3, 1fr); /* Configuración para tabletas */
+                grid-template-columns: repeat(3, 1fr);
             }
 
             #video-player-container {
@@ -110,7 +111,7 @@
 
         @media (min-width: 1024px) {
             .grid-container {
-                grid-template-columns: repeat(4, 1fr); /* Configuración para pantallas grandes */
+                grid-template-columns: repeat(4, 1fr);
             }
 
             #video-player-container {
@@ -135,11 +136,17 @@
             var videoPlayerContainer = document.getElementById('video-player-container');
             var iframe = document.getElementById('video-player');
 
-            // Agregar parámetro para reproducción automática
-            iframe.src = url + "&autoplay=1";
+            // Establece la URL del video con reproducción automática y sin necesidad de interacción
+            iframe.src = url + "&autoplay=1&muted=0"; // Reproducción automática y desmuteo
 
             // Mostrar el reproductor
             videoPlayerContainer.style.display = 'block';
+
+            // Escuchar cuando el iframe está listo
+            iframe.onload = function() {
+                // En este punto podríamos usar una API de video, si está disponible, para manejar el volumen, pero con iframes externos es limitado.
+                // El iframe será mostrado con autoplay al instante
+            };
 
             // Forzar pantalla completa
             requestFullScreen(videoPlayerContainer);
@@ -189,7 +196,8 @@
 
     <!-- Reproductor de video -->
     <div id="video-player-container">
-        <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
+        <iframe id="video-player" sandbox="allow-same-origin allow-scripts allow-autoplay" frameborder="0" allowfullscreen></iframe>
     </div>
 </body>
 </html>
+

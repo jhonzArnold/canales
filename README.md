@@ -349,9 +349,9 @@
                     </div>
                     <!-- Canal 2 -->
                     <div class="grid-item">
-                        <img src="aa.jfif" alt="Canal 2">
-                        <h4>Canal 2</h4>
-                        <button onclick="loadVideo('https://betzta.com/canales.php?stream=america')">Ver canal</button>
+                        <img src="gol.jpg" alt="Gol Perú">
+                        <h4>Gol Perú</h4>
+                        <button onclick="loadVideo('https://betzta.com/canales.php?stream=golperu')">Ver canal</button>
                     </div>
                     <!-- Canal 3 -->
                     <div class="grid-item">
@@ -367,19 +367,19 @@
                 <h3>Películas</h3>
                 <div class="grid-container">
                     <div class="grid-item">
-                        <img src="garf.jpg" alt="Película 1">
-                        <h4>Película 1</h4>
+                        <img src="garf.jpg" alt="Garfield">
+                        <h4>Garfield</h4>
                         <button onclick="loadVideo('https://nuuuppp.pro/watch/7kz7jIHYMkPnCGUQ5OVCQ3jz3s7kz70Y8cv7kz7kU4p45xzpNojXZmI?h=')">Ver película</button>
                     </div>
                     <div class="grid-item">
-                        <img src="aa.jfif" alt="Película 2">
-                        <h4>Película 2</h4>
-                        <button onclick="loadVideo('https://betzta.com/canales.php?stream=america')">Ver película</button>
+                        <img src="win.jpg" alt="winnie pooh 2">
+                        <h4>winnie pooh 2</h4>
+                        <button onclick="loadVideo('https://tmdbcdn.lat/watch_video.php?v=aEpFdVRUcDdpcSsyaVZSLzJPaXZKS01UQTFla1lRTzdKaHFLS3E0VThuQi92V2s0SEpMRWZZL0RqNkk4VGZZUA%3D%3D#iss=MjgwMzphM2UwOjE5MTM6YzBmOTphMWNkOjUyNDA6YWU4ZjoyOWM5')">Ver película</button>
                     </div>
                     <div class="grid-item">
-                        <img src="dd.jfif" alt="Película 3">
-                        <h4>Película 3</h4>
-                        <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Ver película</button>
+                        <img src="terr.jpg" alt="Terriefer 3">
+                        <h4>Terriefer 3</h4>
+                        <button onclick="loadVideo('https://tmdbcdn.lat/watch_video.php?v=aldOTm5vMzFwcTZuaEV3ZUZ3WVhRMWtDU2JOdk9CVHQ0eUJqbjFmL1pvaXl3U2NpU3I0ci9CR1NPZlR0dFgvWA%3D%3D#iss=MjgwMzphM2UwOjE5MTM6YzBmOTphMWNkOjUyNDA6YWU4ZjoyOWM5')">Ver película</button>
                     </div>
                 </div>
             </div>
@@ -401,4 +401,3 @@
     </div>
 </body>
 </html>
-

@@ -369,6 +369,12 @@
                         <h4>Latina</h4>
                         <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Ver canal</button>
                     </div>
+                    <!-- Canal 4 -->
+                    <div class="grid-item">
+                        <img src="pana.jpg" alt="panamericana">
+                        <h4>panamericana</h4>
+                        <button onclick="loadVideo('https://player.twitch.tv/?channel=panamericanatvpe&muted=false&parent=panamericana.pe')">Ver canal</button>
+                    </div>
                 </div>
             </div>
 
@@ -391,6 +397,32 @@
                         <h4>Alien: Romulus</h4>
                         <button onclick="loadVideo('https://vidhidepro.com/v/xhzx133jvb6t')">Ver película</button>
                     </div>
+                    <div class="grid-item">
+                        <img src="simi.jpg" alt="El planeta de los simios: Nuevo reino">
+                        <h4>El planeta de los simios: Nuevo reino</h4>
+                        <button onclick="loadVideo('https://vidhidepro.com/v/xh1s090mn2wp')">Ver película</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="god.jpeg" alt="Godzilla y Kong: El nuevo imperio">
+                        <h4>Godzilla y Kong: El nuevo imperio</h4>
+                        <button onclick="loadVideo('https://swdyu.com/e/lxxfbxny2vsb')">Ver película</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="dea.jpg" alt="Deadpool & Wolverine">
+                        <h4>Deadpool & Wolverine</h4>
+                        <button onclick="loadVideo('https://vidhidepro.com/v/5jlv210gxoid')">Ver película</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="bad.jpg" alt="Bad Boys: Hasta la muerte">
+                        <h4>Bad Boys: Hasta la muerte</h4>
+                        <button onclick="loadVideo('https://vidhidepro.com/v/wy2w7lkpk98c')">Ver película</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="cho.jpg" alt="Chabuca">
+                        <h4>Chabuca</h4>
+                        <button onclick="loadVideo('https://cdnplaypro.com/e/ap4r4jtogkl3')">Ver película</button>
+                    </div>
+              
                 </div>
             </div>
         </div>
@@ -406,9 +438,11 @@
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?get=Ly9sdW5hLTEtdmlkZW8ubWVkaWFzZXJ2ZXIuZGlnaXRhbC9leGl0b3NhdHZfMjMzYi00YjQ5LWE3MjYtNWEzY2IwZTMyNDNjL2luZGV4LmZtcDQubTN1OA==')">Exitosa</button>
-            <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
+            <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">panamericana</button>
+            <button onclick="loadVideo('https://player.twitch.tv/?channel=panamericanatvpe&muted=false&parent=panamericana.pe')">Latina</button>
         </div>
     </div>
 </body>
 </html>
+
 

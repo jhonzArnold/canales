@@ -367,7 +367,7 @@
                 <h3>Películas</h3>
                 <div class="grid-container">
                     <div class="grid-item">
-                        <img src="descarga.jfif" alt="Película 1">
+                        <img src="garf.jpg" alt="Película 1">
                         <h4>Película 1</h4>
                         <button onclick="loadVideo('https://nuuuppp.pro/watch/7kz7jIHYMkPnCGUQ5OVCQ3jz3s7kz70Y8cv7kz7kU4p45xzpNojXZmI?h=')">Ver película</button>
                     </div>

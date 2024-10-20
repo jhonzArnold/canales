@@ -87,6 +87,7 @@
 
         #video-player-container {
             display: none;
+            position: relative;
             width: 100%;
             height: 300px;
         }
@@ -95,6 +96,35 @@
             width: 100%;
             height: 100%;
             border: 0;
+        }
+
+        .channel-list {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 200px;
+            padding: 10px;
+            display: none;
+        }
+
+        .channel-list h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .channel-list button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .channel-list button:hover {
+            background-color: #0056b3;
         }
 
         /* Media Queries para pantallas más grandes */
@@ -134,12 +164,16 @@
         function loadVideo(url) {
             var videoPlayerContainer = document.getElementById('video-player-container');
             var iframe = document.getElementById('video-player');
+            var channelList = document.querySelector('.channel-list');
 
             // Establece la URL del video con reproducción automática
             iframe.src = url + "&autoplay=1&muted=0";
 
             // Mostrar el reproductor
             videoPlayerContainer.style.display = 'block';
+
+            // Mostrar la lista de canales
+            channelList.style.display = 'block';
 
             // Esperar a que el iframe se cargue y ponerlo en pantalla completa
             iframe.onload = function() {
@@ -199,7 +233,16 @@
     <!-- Reproductor de video -->
     <div id="video-player-container">
         <iframe id="video-player" sandbox="allow-same-origin allow-scripts allow-autoplay" frameborder="0" allowfullscreen></iframe>
+
+        <!-- Lista de otros canales para cambiar -->
+        <div class="channel-list">
+            <h3>Canales</h3>
+            <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Canal 1</button>
+            <button onclick="loadVideo('https://betzta.com/canales.php?stream=america')">Canal 2</button>
+            <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Canal 3</button>
+        </div>
     </div>
 </body>
 </html>
+
 

@@ -87,7 +87,6 @@
 
         #video-player-container {
             display: none;
-            margin-top: 20px;
             width: 100%;
             height: 300px;
         }
@@ -136,20 +135,16 @@
             var videoPlayerContainer = document.getElementById('video-player-container');
             var iframe = document.getElementById('video-player');
 
-            // Establece la URL del video con reproducción automática y sin necesidad de interacción
-            iframe.src = url + "&autoplay=1&muted=0"; // Reproducción automática y desmuteo
+            // Establece la URL del video con reproducción automática
+            iframe.src = url + "&autoplay=1&muted=0";
 
             // Mostrar el reproductor
             videoPlayerContainer.style.display = 'block';
 
-            // Escuchar cuando el iframe está listo
+            // Esperar a que el iframe se cargue y ponerlo en pantalla completa
             iframe.onload = function() {
-                // En este punto podríamos usar una API de video, si está disponible, para manejar el volumen, pero con iframes externos es limitado.
-                // El iframe será mostrado con autoplay al instante
+                requestFullScreen(videoPlayerContainer);
             };
-
-            // Forzar pantalla completa
-            requestFullScreen(videoPlayerContainer);
         }
 
         // Función para solicitar pantalla completa
@@ -162,6 +157,13 @@
                 element.webkitRequestFullscreen();
             } else if (element.msRequestFullscreen) { // IE/Edge
                 element.msRequestFullscreen();
+            }
+
+            // Cambiar a orientación horizontal para dispositivos móviles
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape').catch(function(error) {
+                    console.error('Error en el bloqueo de orientación:', error);
+                });
             }
         }
     </script>

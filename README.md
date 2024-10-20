@@ -357,7 +357,7 @@
                     <div class="grid-item">
                         <img src="gol.jpg" alt="Gol Perú">
                         <h4>Gol Perú</h4>
-                        <button onclick="loadVideo('https://betzta.com/canales.php?stream=golperu')">Ver canal</button>
+                        <button onclick="loadVideo('https://www.gol12.com/vivo/canales.php?stream=golperu')">Ver canal</button>
                     </div>
                     <!-- Canal 3 -->
                     <div class="grid-item">
@@ -407,3 +407,4 @@
     </div>
 </body>
 </html>
+

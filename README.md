@@ -11,14 +11,17 @@
             margin: 0;
         }
 
-        /* Contenedor de Login */
+        /* Contenedor de Login con imagen de fondo */
         .login-container {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             min-height: 100vh;
-            background-color: #f0f0f0;
+            background-image: url('https://img.global.news.samsung.com/mx/wp-content/uploads/2022/08/MX_TV_Mockup_03-1.jpg'); /* Aquí va la URL de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .login-container.hidden {
@@ -27,7 +30,7 @@
 
         .login-box {
             text-align: center;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
             padding: 20px 30px;
             border: 1px solid #ddd;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

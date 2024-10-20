@@ -373,13 +373,19 @@
                     <div class="grid-item">
                         <img src="pana.jpg" alt="panamericana">
                         <h4>panamericana</h4>
-                        <button onclick="loadVideo('https://player.twitch.tv/?channel=panamericanatvpe&muted=false&parent=panamericana.pe')">Ver canal</button>
+                        <button onclick="loadVideo('https://cdnhd.iblups.com/hls/ptv5.m3u8')">Ver canal</button>
                     </div>
                      <!-- Canal 5 -->
                      <div class="grid-item">
                         <img src="aa.jfif" alt="America">
                         <h4>America</h4>
                         <button onclick="loadVideo('https://mdstrm.com/live-stream/6099b04d9418ac082441dd74?jsapi=true&pause_ad_on_click=false&show_controls_on_ad=true&autoplay=true&player=60c2a74e0f4668082e309af4&ref=https%3A%2F%2Ftvgo.americatv.com.pe%2F&access_token=XR4NWR4vNMWmiAfeom8KJkQCs8gPirc5Nzux9vxKv3AlOHbhalDeR3vkr8fTtdNHAS1PUr1uSxw&c=&ads[map]=https%3A%2F%2Fpubads.g.doubleclick.net%2Fgampad%2Fads%3Fiu%3D%2F84748259%2Ftvgo_home_atf_player%26description_url%3D%5Bplaceholder%5D%26tfcd%3D0%26npa%3D0%26sz%3D640x480%26gdfp_req%3D1%26output%3Dvast%26unviewed_position_start%3D1%26env%3Dvp%26impl%3Ds%26correlator%3D&youbora[extra][0]=NoRegNoSusc&youbora[extra][1]=TVGO%20Web&youbora[extra][2]=tvgo-web')">Ver canal</button>
+                    </div>
+                    <!-- Canal 6 -->
+                    <div class="grid-item">
+                        <img src="gol.jpg" alt="golperu">
+                        <h4>golperu</h4>
+                        <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">Ver canal</button>
                     </div>
 
                 </div>
@@ -445,8 +451,10 @@
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?get=Ly9sdW5hLTEtdmlkZW8ubWVkaWFzZXJ2ZXIuZGlnaXRhbC9leGl0b3NhdHZfMjMzYi00YjQ5LWE3MjYtNWEzY2IwZTMyNDNjL2luZGV4LmZtcDQubTN1OA==')">Exitosa</button>
-            <button onclick="loadVideo('https://player.twitch.tv/?channel=panamericanatvpe&muted=false&parent=panamericana.pe')">panamericana</button>
+            <button onclick="loadVideo('https://cdnhd.iblups.com/hls/ptv5.m3u8')">panamericana</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
+            <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">golperu</button>
+
         </div>
     </div>
 </body>

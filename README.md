@@ -260,6 +260,13 @@
             var videoPlayerContainer = document.getElementById('video-player-container');
             var iframe = document.getElementById('video-player');
 
+            // Eliminar el sandbox solo si es Gol Perú
+            if (url === 'https://betzta.com/canales.php?stream=golperu') {
+                iframe.removeAttribute('sandbox');
+            } else {
+                iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
+            }
+
             // Establece la URL del video con reproducción automática
             iframe.src = url;
 
@@ -374,12 +381,12 @@
                     <div class="grid-item">
                         <img src="win.jpg" alt="winnie pooh 2">
                         <h4>winnie pooh 2</h4>
-                        <button onclick="loadVideo('https://tmdbcdn.lat/watch_video.php?v=aEpFdVRUcDdpcSsyaVZSLzJPaXZKS01UQTFla1lRTzdKaHFLS3E0VThuQi92V2s0SEpMRWZZL0RqNkk4VGZZUA%3D%3D#iss=MjgwMzphM2UwOjE5MTM6YzBmOTphMWNkOjUyNDA6YWU4ZjoyOWM5')">Ver película</button>
+                        <button onclick="loadVideo('https://vidhidepro.com/v/p6zkbptnjokx')">Ver película</button>
                     </div>
                     <div class="grid-item">
                         <img src="terr.jpg" alt="Terriefer 3">
                         <h4>Terriefer 3</h4>
-                        <button onclick="loadVideo('https://tmdbcdn.lat/watch_video.php?v=aldOTm5vMzFwcTZuaEV3ZUZ3WVhRMWtDU2JOdk9CVHQ0eUJqbjFmL1pvaXl3U2NpU3I0ci9CR1NPZlR0dFgvWA%3D%3D#iss=MjgwMzphM2UwOjE5MTM6YzBmOTphMWNkOjUyNDA6YWU4ZjoyOWM5')">Ver película</button>
+                        <button onclick="loadVideo('https://waaw.to/f/XXXvHS7507zt')">Ver película</button>
                     </div>
                 </div>
             </div>
@@ -401,3 +408,4 @@
     </div>
 </body>
 </html>
+

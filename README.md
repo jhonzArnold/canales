@@ -379,7 +379,7 @@
                      <div class="grid-item">
                         <img src="aa.jfif" alt="America">
                         <h4>America</h4>
-                        <button onclick="loadVideo('https://mdstrm.com/live-stream/6099b04d9418ac082441dd74?jsapi=true&pause_ad_on_click=false&show_controls_on_ad=true&autoplay=true&player=60c2a74e0f4668082e309af4&ref=https%3A%2F%2Ftvgo.americatv.com.pe%2F&access_token=XR4NWR4vNMWmiAfeom8KJkQCs8gPirc5Nzux9vxKv3AlOHbhalDeR3vkr8fTtdNHAS1PUr1uSxw&c=&ads[map]=https%3A%2F%2Fpubads.g.doubleclick.net%2Fgampad%2Fads%3Fiu%3D%2F84748259%2Ftvgo_home_atf_player%26description_url%3D%5Bplaceholder%5D%26tfcd%3D0%26npa%3D0%26sz%3D640x480%26gdfp_req%3D1%26output%3Dvast%26unviewed_position_start%3D1%26env%3Dvp%26impl%3Ds%26correlator%3D&youbora[extra][0]=NoRegNoSusc&youbora[extra][1]=TVGO%20Web&youbora[extra][2]=tvgo-web')">Ver canal</button>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/americatv.html')">Ver canal</button>
                     </div>
                     <!-- Canal 6 -->
                     <div class="grid-item">
@@ -392,6 +392,78 @@
                         <img src="atv.jfif" alt="atv">
                         <h4>atv</h4>
                         <button onclick="loadVideo('https://atvenvivo.com/hls.php-89.html?get=Ly9hbGJhLXBlLWF0di1hdHYuc3RyZWFtLm1lZGlhdGlxdWVzdHJlYW0uY29tL2luZGV4Lm0zdTg=')">Ver canal</button>
+                    </div>
+                    <!-- Canal 8 -->
+                    <div class="grid-item">
+                        <img src="ki.png" alt="discovery kids">
+                        <h4>discovery kids</h4>
+                        <button onclick="loadVideo('https://tvlibreonline.net/html/clarovideo.html?r=DISKIDS')">Ver canal</button>
+                    </div>
+                     <!-- Canal 9 -->
+                     <div class="grid-item">
+                        <img src="dee.png" alt="disney chanel">
+                        <h4>disney chanel</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneychannel.html')">Ver canal</button>
+                    </div>
+                     <!-- Canal 10 -->
+                     <div class="grid-item">
+                        <img src="kk.webp" alt="cartton network">
+                        <h4>cartton network</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonnetwork.html')">Ver canal</button>
+                    </div>
+                    <!-- Canal 11 -->
+                    <div class="grid-item">
+                        <img src="ees.png" alt="star chanel">
+                        <h4>star chanel</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/starchannel.html')">Ver canal</button>
+                    </div>
+                     <!-- Canal 12 -->
+                     <div class="grid-item">
+                        <img src="tt.png" alt="tnt hd">
+                        <h4>tnt hd</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tnt.html')">Ver canal</button>
+                    </div>
+                     <!-- Canal 13 -->
+                     <div class="grid-item">
+                        <img src="pla.png" alt="animad plane">
+                        <h4>animad plane</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/animalplanet.html')">Ver canal</button>
+                    </div>
+                     <!-- Canal 14 -->
+                     <div class="grid-item">
+                        <img src="his.jfif" alt="histoty chanel">
+                        <h4>histoty chanel</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/history.html')">Ver canal</button>
+                    </div>
+                    <!-- Canal 15 -->
+                    <div class="grid-item">
+                        <img src="ju.jfif" alt="Disney Junior">
+                        <h4>Disney Junior</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneyjr.html')">Ver canal</button>
+                    </div>
+                    <!-- Canal 16 -->
+                    <div class="grid-item">
+                        <img src="caa.png" alt="Cartoonito">
+                        <h4>Cartoonito</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonito.html')">Ver canal</button>
+                    </div>
+                    <!-- Canal 17 -->
+                    <div class="grid-item">
+                        <img src="se.png" alt="TNT Series">
+                        <h4>TNT Series</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">Ver canal</button>
+                    </div>
+                     <!-- Canal 18 -->
+                     <div class="grid-item">
+                        <img src="tet.png" alt="Telemundo">
+                        <h4>Telemundo</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Ver canal</button>
+                    </div>
+                     <!-- Canal 19 -->
+                     <div class="grid-item">
+                        <img src="qq.png" alt="National Geographic">
+                        <h4>National Geographic</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">Ver canal</button>
                     </div>
 
                 </div>
@@ -461,8 +533,22 @@
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
             <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">golperu</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-89.html?get=Ly9hbGJhLXBlLWF0di1hdHYuc3RyZWFtLm1lZGlhdGlxdWVzdHJlYW0uY29tL2luZGV4Lm0zdTg=')">atv</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/americatv.html')">America</button>
+            <button onclick="loadVideo('https://tvlibreonline.net/html/clarovideo.html?r=DISKIDS')">discovery kids</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneychannel.html')">disney chanel</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonnetwork.html')">cartton network</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/starchannel.html')">star chanel</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tnt.html')">tnt hd</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/animalplanet.html')">animad plane</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/history.html')">histoty chanel</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneyjr.html')">Disney Junior</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonito.html')">Cartoonito</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">TNT Series</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Telemundo</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">National Geographic</button>
 
         </div>
     </div>
 </body>
 </html>
+

@@ -719,8 +719,7 @@
             <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ligamax1.1</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://micanaldeportivo.com/directvsports.php')">Direct Sport1</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct Sport2</button>
-            <button onclick="loadVideo('https://clarovideo.sdfgnksbounce.com/warnerbrostv.php?url=aHR0cHM6Ly9wZWxpdmVjaGFubmVsc2Rhc2gtMS5jbGFyb3ZpZGVvLmNvbS9icGstdHYvV0FSTkVSQ0hBTk5FTEhEL2Rhc2hfZmsvaW5kZXgubXBk&k1=MGVmY2E0M2RjOTBmMTY5MjVkMTA0YWI0MjI4MjE4ZDA=&k2=YmM4NmRlYTYxZTlhNmY0MDEyZDg4NDM5YTZlZjZjYzg=&aut=true&lang=0')">Warner</button>
-            <button onclick="loadVideo('https://clarovideo.sdfgnksbounce.com/usa.php?url=Ly9sYXRhbXZvc2xpdmVjbGFyb3ZpZGVvLmFrYW1haXplZC5uZXQvQ29udGVudC9EQVNIX0RBU0hfRksvTGl2ZS9DaGFubmVsKFNZRllIRF9BUkcpL21hbmlmZXN0Lm1wZA==&k1=Njk0ZmIwNWE5MzljMDJiY2Y0NDU5OTllOTQ1Yjg2MTk=&k2=NGUxMDI5ZWM0YmYxYTA1ZTgzZmQzZDFkNGI1NDBiY2M=')">SYFY</button>
+        
         </div>
     </div>
     <!-- Information Section (At the Bottom) -->

@@ -314,8 +314,6 @@
         }
     </style>
     <script>
-      
-
         let currentImageIndex = 0;
         let images = [];
         let infoIndex = 0;
@@ -324,7 +322,6 @@
             "📺 Cualquier mejora escribeme ➔",
             "💡 Parches Alternativos , para cualquier equipo ➔",
         ];
-
         // Login Function
         function login() {
             const id = document.getElementById("id").value;
@@ -337,7 +334,6 @@
                 alert("ID o contraseña incorrectos. Intenta de nuevo.");
             }
         }
-
         // Logout Function
         function logout() {
             document.querySelector('.main-container').classList.remove('active');
@@ -345,7 +341,6 @@
             document.getElementById("id").value = ''; // Clear ID field
             document.getElementById("password").value = ''; // Clear password field
         }
-
         // Start Image Carousel
         function startCarousel() {
             images = document.querySelectorAll('.carousel img');
@@ -356,21 +351,18 @@
                 images[currentImageIndex].classList.add('active');
             }, 3000); // Change every 3 seconds
         }
-
         // Show Next Info Text
         function showNextInfo() {
             const infoSection = document.querySelector('.info-section p');
             infoSection.textContent = infoTexts[infoIndex];
             infoIndex = (infoIndex + 1) % infoTexts.length;
             infoSection.style.opacity = 1; // Show text
-
             // Hide text after 3 seconds
             setTimeout(() => {
                 infoSection.style.opacity = 0; // Fade out text
                 setTimeout(showNextInfo, 1000); // Wait 1 second before showing next text
             }, 3000); // Display each text for 3 seconds
         }
-
         // Show Sections Function
         function showSection(section) {
             document.querySelector('.home-section').style.display = 'none';
@@ -384,7 +376,6 @@
                 document.querySelector('.movies-section').style.display = 'block';
             }
         }
-
         // Load Video Function
         function loadVideo(url) {
             var videoPlayerContainer = document.getElementById('video-player-container');
@@ -396,7 +387,6 @@
             // Enter fullscreen
             enterFullScreen(videoPlayerContainer);
         }
-
         // Close Video Function
         function closeVideo() {
             var videoPlayerContainer = document.getElementById('video-player-container');
@@ -406,7 +396,6 @@
             // Stop video
             iframe.src = "";
         }
-
         // Enter Fullscreen Function
         function enterFullScreen(element) {
             if (element.requestFullscreen) {
@@ -419,13 +408,11 @@
                 element.msRequestFullscreen();
             }
         }
-
         // Toggle Channel List Function
         function toggleChannelList() {
             var channelList = document.querySelector('.channel-list');
             channelList.classList.toggle('active');
         }
-
         // Initialize Info Rotation on Page Load
         window.onload = function() {
             showNextInfo(); // Start info rotation
@@ -442,7 +429,6 @@
             <button onclick="login()">Ingresar</button>
         </div>
     </div>
-
     <!-- Main Container After Login -->
     <div class="main-container">
         <div class="header">
@@ -463,17 +449,14 @@
                     <img src="canaa.jpg" alt="Imagen 3">
                 </div>
             </div>
-            <!-- Channels Section -->
             <div class="channels-section" style="display: none;">
                 <h2>Canales</h2>
                 <div class="grid-container">
-                    <!-- Canal 1 -->
                     <div class="grid-item">
                         <img src="descarga.jfif" alt="Willax">
                         <h4>Willax</h4>
                         <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Ver canal</button>
                     </div>
-                    <!-- Canal 2 -->
                     <div class="grid-item">
                         <img src="exitosa.jpg" alt="Exitosa">
                         <h4>Exitosa</h4>
@@ -484,19 +467,16 @@
                         <h4>Latina</h4>
                         <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Ver canal</button>
                     </div>
-                    <!-- Canal 4 -->
                     <div class="grid-item">
                         <img src="pana.jpg" alt="panamericana">
                         <h4>panamericana</h4>
                         <button onclick="loadVideo('https://cdnhd.iblups.com/hls/ptv5.m3u8')">Ver canal</button>
                     </div>
-                     <!-- Canal 5 -->
                      <div class="grid-item">
                         <img src="aa.jfif" alt="America">
                         <h4>America</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/americatv.html')">Ver canal</button>
                     </div>
-                    <!-- Canal 6 -->
                     <div class="grid-item">
                         <img src="gol.jpg" alt="golperu1">
                         <h4>golperu1</h4>
@@ -527,80 +507,61 @@
                         <h4>Ligamax1.1</h4>
                         <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ver canal</button>
                     </div>
-                  
-                    <!-- Canal 7 -->
                     <div class="grid-item">
                         <img src="atv.jfif" alt="atv">
                         <h4>atv</h4>
                         <button onclick="loadVideo('https://atvenvivo.com/hls.php-89.html?get=Ly9hbGJhLXBlLWF0di1hdHYuc3RyZWFtLm1lZGlhdGlxdWVzdHJlYW0uY29tL2luZGV4Lm0zdTg=')">Ver canal</button>
                     </div>
-                    <!-- Canal 8 -->
                     <div class="grid-item">
                         <img src="ki.png" alt="discovery kids">
                         <h4>discovery kids</h4>
                         <button onclick="loadVideo('https://tvlibreonline.net/html/clarovideo.html?r=DISKIDS')">Ver canal</button>
                     </div>
-                     <!-- Canal 9 -->
-                     <div class="grid-item">
-                        <img src="dee.png" alt="disney chanel">
-                        <h4>disney chanel</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneychannel.html')">Ver canal</button>
-                    </div>
-                     <!-- Canal 10 -->
                      <div class="grid-item">
                         <img src="kk.webp" alt="cartton network">
                         <h4>cartton network</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonnetwork.html')">Ver canal</button>
                     </div>
-                    <!-- Canal 11 -->
                     <div class="grid-item">
                         <img src="ees.png" alt="star chanel">
                         <h4>star chanel</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/starchannel.html')">Ver canal</button>
                     </div>
-                     <!-- Canal 12 -->
                      <div class="grid-item">
                         <img src="tt.png" alt="tnt hd">
                         <h4>tnt hd</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tnt.html')">Ver canal</button>
                     </div>
-                     <!-- Canal 13 -->
                      <div class="grid-item">
                         <img src="pla.png" alt="animad plane">
                         <h4>animad plane</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/animalplanet.html')">Ver canal</button>
                     </div>
-                     <!-- Canal 14 -->
                      <div class="grid-item">
                         <img src="his.jfif" alt="histoty chanel">
                         <h4>histoty chanel</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/history.html')">Ver canal</button>
                     </div>
-                    <!-- Canal 15 -->
                     <div class="grid-item">
                         <img src="ju.jfif" alt="Disney Junior">
                         <h4>Disney Junior</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneyjr.html')">Ver canal</button>
                     </div>
-                    <!-- Canal 16 -->
                     <div class="grid-item">
                         <img src="caa.png" alt="Cartoonito">
                         <h4>Cartoonito</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonito.html')">Ver canal</button>
                     </div>
-                    <!-- Canal 17 -->
                     <div class="grid-item">
                         <img src="se.png" alt="TNT Series">
                         <h4>TNT Series</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">Ver canal</button>
                     </div>
-                     <!-- Canal 18 -->
                      <div class="grid-item">
                         <img src="tet.png" alt="Telemundo">
                         <h4>Telemundo</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Ver canal</button>
                     </div>
-                     <!-- Canal 19 -->
                      <div class="grid-item">
                         <img src="qq.png" alt="National Geographic">
                         <h4>National Geographic</h4>
@@ -608,7 +569,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Movies Section -->
             <div class="movies-section" style="display: none;">
                 <h3>Películas</h3>
                 <div class="grid-container">
@@ -707,7 +667,6 @@
                         <h4>Yo antes de ti</h4>
                         <button onclick="loadVideo('https://uqload.net/embed-i6ogeh2w5hah.html')">Ver película</button>
                     </div>
-                    
                     <div class="grid-item">
                         <img src="leon.jfif" alt="El Rey León">
                         <h4>El Rey León</h4>
@@ -759,11 +718,6 @@
                         <button onclick="loadVideo('https://uqload.net/embed-7jebr2qvb9tv.html')">Ver película</button>
                     </div>
                     <div class="grid-item">
-                        <img src="dun.jfif" alt="Duna: Parte dos">
-                        <h4>Duna: Parte dos</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-zq5eiedadrtt.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
                         <img src="beat.jfif" alt="Beetlejuice Beetlejuice">
                         <h4>Beetlejuice Beetlejuice</h4>
                         <button onclick="loadVideo('https://uqload.net/embed-tnmqaw2bgkqr.html')">Ver película</button>
@@ -777,11 +731,6 @@
                         <img src="tee.jfif" alt="Terrifier : Payaso Siniestro">
                         <h4>Terrifier : Payaso Siniestro</h4>
                         <button onclick="loadVideo('https://uqload.net/embed-41v48hl5no9t.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="Los Horrores de Caddo Lake.jfif" alt="Los Horrores de Caddo Lake">
-                        <h4>Los Horrores de Caddo Lake</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-f56ena4bhsk5.html')">Ver película</button>
                     </div>
                     <div class="grid-item">
                         <img src="wii.jpg" alt="Winnie Pooh: Miel y Sangre1">
@@ -808,28 +757,14 @@
                         <h4>Olé, el viaje de Ferdinand</h4>
                         <button onclick="loadVideo('https://uqload.net/embed-duvne49qmzqv.html')">Ver película</button>
                     </div>
-                    <div class="grid-item">
-                        <img src="angri1.jfif" alt="Angry Birds1">
-                        <h4>Angry Birds1</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-4hi7bd7hca2u.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="angri1.jfif" alt="Angry Birds2">
-                        <h4>Angry Birds2</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-8il4ajtnpair.html')">Ver película</button>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Video Player (Large Window) -->
     <div id="video-player-container">
         <button class="close-button" onclick="closeVideo()">✖</button>
         <button class="show-channels-button" onclick="toggleChannelList()">📺</button>
         <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
-        
-        <!-- Channel List inside the Player -->
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?get=Ly9sdW5hLTEtdmlkZW8ubWVkaWFzZXJ2ZXIuZGlnaXRhbC9leGl0b3NhdHZfMjMzYi00YjQ5LWE3MjYtNWEzY2IwZTMyNDNjL2luZGV4LmZtcDQubTN1OA==')">Exitosa</button>
@@ -860,10 +795,8 @@
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Ligamax1.4</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://micanaldeportivo.com/directvsports.php')">Direct Sport1</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct Sport2</button>
-
         </div>
     </div>
-
     <!-- Information Section (At the Bottom) -->
     <div class="info-section">
         <h3>👤💻 Cualquier mejora:</h3>
@@ -875,3 +808,4 @@
     </div>
 </body>
 </html>
+

@@ -462,11 +462,6 @@
                         <h4>Latina</h4>
                         <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Ver canal</button>
                     </div>
-                    <div class="grid-item">
-                        <img src="pana.jpg" alt="panamericana">
-                        <h4>panamericana</h4>
-                        <button onclick="loadVideo('https://cdnhd.iblups.com/hls/ptv5.m3u8')">Ver canal</button>
-                    </div>
                      <div class="grid-item">
                         <img src="aa.jfif" alt="America">
                         <h4>America</h4>
@@ -702,7 +697,6 @@
         <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
-            <button onclick="loadVideo('https://cdnhd.iblups.com/hls/ptv5.m3u8')">panamericana</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
             <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">golperu</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-89.html?get=Ly9hbGJhLXBlLWF0di1hdHYuc3RyZWFtLm1lZGlhdGlxdWVzdHJlYW0uY29tL2luZGV4Lm0zdTg=')">atv</button>
@@ -725,6 +719,8 @@
             <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ligamax1.1</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://micanaldeportivo.com/directvsports.php')">Direct Sport1</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct Sport2</button>
+            <button onclick="loadVideo('https://clarovideo.sdfgnksbounce.com/warnerbrostv.php?url=aHR0cHM6Ly9wZWxpdmVjaGFubmVsc2Rhc2gtMS5jbGFyb3ZpZGVvLmNvbS9icGstdHYvV0FSTkVSQ0hBTk5FTEhEL2Rhc2hfZmsvaW5kZXgubXBk&k1=MGVmY2E0M2RjOTBmMTY5MjVkMTA0YWI0MjI4MjE4ZDA=&k2=YmM4NmRlYTYxZTlhNmY0MDEyZDg4NDM5YTZlZjZjYzg=&aut=true&lang=0'>Warner</button>
+            <button onclick="loadVideo('https://clarovideo.sdfgnksbounce.com/usa.php?url=Ly9sYXRhbXZvc2xpdmVjbGFyb3ZpZGVvLmFrYW1haXplZC5uZXQvQ29udGVudC9EQVNIX0RBU0hfRksvTGl2ZS9DaGFubmVsKFNZRllIRF9BUkcpL21hbmlmZXN0Lm1wZA==&k1=Njk0ZmIwNWE5MzljMDJiY2Y0NDU5OTllOTQ1Yjg2MTk=&k2=NGUxMDI5ZWM0YmYxYTA1ZTgzZmQzZDFkNGI1NDBiY2M=')">SYFY</button>
         </div>
     </div>
     <!-- Information Section (At the Bottom) -->

@@ -628,29 +628,9 @@
                         <button onclick="loadVideo('https://uqload.net/embed-q8m15ez359pl.html')">Ver película</button>
                     </div>
                     <div class="grid-item">
-                        <img src="war.jfif" alt="Vengadores: Infinity War">
-                        <h4>Vengadores: Infinity War</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-c5e4afu2inse.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="ultr.jfif" alt="Avengers: Era de Ultrón">
-                        <h4>Avengers: Era de Ultrón</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-569uasq6zn79.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="ee.jfif" alt="Vengadores: Endgame">
-                        <h4>Vengadores: Endgame</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-qqt16na5885k.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
                         <img src="2w (1).jfif" alt="Thor: Ragnarok">
                         <h4>Thor: Ragnarok</h4>
                         <button onclick="loadVideo('https://uqload.net/embed-hjhrtdye9fnt.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="gi.jfif" alt="Guardianes de la Galaxia volumen 3">
-                        <h4>Guardianes de la Galaxia volumen 3</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-i1tmql13bg5z.html')">Ver película</button>
                     </div>
                     <div class="grid-item">
                         <img src="docto.jfif" alt="Doctor Strange en el multiverso de la locura">
@@ -751,11 +731,6 @@
                         <img src="mi22.jfif" alt="Misión de rescate 2">
                         <h4>Misión de rescate 2</h4>
                         <button onclick="loadVideo('https://uqload.net/embed-76fvbnv9zf3n.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="ole.jfif" alt="Olé, el viaje de Ferdinand">
-                        <h4>Olé, el viaje de Ferdinand</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-duvne49qmzqv.html')">Ver película</button>
                     </div>
                 </div>
             </div>

@@ -458,11 +458,6 @@
                         <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Ver canal</button>
                     </div>
                     <div class="grid-item">
-                        <img src="exitosa.jpg" alt="Exitosa">
-                        <h4>Exitosa</h4>
-                        <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?get=Ly9sdW5hLTEtdmlkZW8ubWVkaWFzZXJ2ZXIuZGlnaXRhbC9leGl0b3NhdHZfMjMzYi00YjQ5LWE3MjYtNWEzY2IwZTMyNDNjL2luZGV4LmZtcDQubTN1OA==')">Ver canal</button>
-                    </div>
-                    <div class="grid-item">
                         <img src="dd.jfif" alt="Latina">
                         <h4>Latina</h4>
                         <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Ver canal</button>
@@ -596,21 +591,6 @@
                         <img src="Kung Fu Panda 4.jfif" alt="Kung Fu Panda 4">
                         <h4>Kung Fu Panda 4</h4>
                         <button onclick="loadVideo('https://jodwish.com/e/vs3upr0nt6bs')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="max1.jfif" alt="Furiosa: De la saga Mad Max">
-                        <h4>Furiosa: De la saga Mad Max</h4>
-                        <button onclick="loadVideo('https://swdyu.com/e/vqkkpd68dnm2')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="Furiosa.jfif" alt="Mad Max: Furia en el camino1">
-                        <h4>Mad Max: Furia en el camino1</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-v27cykotrdu5.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="IntensaMente 2.jfif" alt="IntensaMente 2">
-                        <h4>IntensaMente 2</h4>
-                        <button onclick="loadVideo('https://wishonly.site/e/7eyh4y55rz7q')">Ver película</button>
                     </div>
                     <div class="grid-item">
                         <img src="La Monja II.jfif" alt="La Monja II">

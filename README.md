@@ -722,7 +722,7 @@
         <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
-            <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?get=Ly9sdW5hLTEtdmlkZW8ubWVkaWFzZXJ2ZXIuZGlnaXRhbC9leGl0b3NhdHZfMjMzYi00YjQ5LWE3MjYtNWEzY2IwZTMyNDNjL2luZGV4LmZtcDQubTN1OA==')">Exitosa</button>
+            <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?
             <button onclick="loadVideo('https://cdnhd.iblups.com/hls/ptv5.m3u8')">panamericana</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
             <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">golperu</button>
@@ -739,15 +739,12 @@
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonito.html')">Cartoonito</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">TNT Series</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Telemundo</button>
-            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">National Geographic</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/latina.html')">Latina1</button>
             <button onclick="loadVideo('https://la10hd.com/tv/golperu.html')">golperu1</button>
             <button onclick="loadVideo('https://golazohd.com/mpd.php?id=deportv')">golperu2</button>
             <button onclick="loadVideo('https://la10hd.com/tv/liga1max.html')">Ligamax1</button>
             <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ligamax1.1</button>
-            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://la12hd.com/vivo/canal.php?stream=liga1max')">Ligamax1.2</button>
-            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://streamtp1.com/global2.php?stream=l1max')">Ligamax1.3</button>
-            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Ligamax1.4</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://streamtp1.com/global2.php?
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://micanaldeportivo.com/directvsports.php')">Direct Sport1</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct Sport2</button>
         </div>

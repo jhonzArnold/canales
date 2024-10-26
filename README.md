@@ -553,11 +553,6 @@
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">Ver canal</button>
                     </div>
                      <div class="grid-item">
-                        <img src="tet.png" alt="Telemundo">
-                        <h4>Telemundo</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Ver canal</button>
-                    </div>
-                     <div class="grid-item">
                         <img src="qq.png" alt="National Geographic">
                         <h4>National Geographic</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">Ver canal</button>
@@ -593,11 +588,6 @@
                         <button onclick="loadVideo('https://jodwish.com/e/vs3upr0nt6bs')">Ver película</button>
                     </div>
                     <div class="grid-item">
-                        <img src="La Monja II.jfif" alt="La Monja II">
-                        <h4>La Monja II</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-uesu16betclf.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
                         <img src="Oppenheimer.jfif" alt="Oppenheimer">
                         <h4>Oppenheimer</h4>
                         <button onclick="loadVideo('https://asnwish.com/e/yfeizpk9bu1k')">Ver película</button>
@@ -606,11 +596,6 @@
                         <img src="Saw X.jfif" alt="Saw X">
                         <h4>Saw X</h4>
                         <button onclick="loadVideo('https://uqload.net/embed-q8m15ez359pl.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="2w (1).jfif" alt="Thor: Ragnarok">
-                        <h4>Thor: Ragnarok</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-hjhrtdye9fnt.html')">Ver película</button>
                     </div>
                     <div class="grid-item">
                         <img src="docto.jfif" alt="Doctor Strange en el multiverso de la locura">
@@ -636,11 +621,6 @@
                         <img src="gat.jfif" alt="Gato con Botas: El último deseo">
                         <h4>Gato con Botas: El último deseo</h4>
                         <button onclick="loadVideo('https://uqload.net/embed-rvp3i5twjgoa.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="mega.jfif" alt="M3GAN">
-                        <h4>M3GAN/h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-a67h9psqypxo.html')">Ver película</button>
                     </div>
                     <div class="grid-item">
                         <img src="yo.jfif" alt="John Wick 4">
@@ -722,7 +702,6 @@
         <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
-            <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?
             <button onclick="loadVideo('https://cdnhd.iblups.com/hls/ptv5.m3u8')">panamericana</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
             <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">golperu</button>
@@ -739,12 +718,11 @@
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonito.html')">Cartoonito</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">TNT Series</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Telemundo</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">National Geographic</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/latina.html')">Latina1</button>
             <button onclick="loadVideo('https://la10hd.com/tv/golperu.html')">golperu1</button>
-            <button onclick="loadVideo('https://golazohd.com/mpd.php?id=deportv')">golperu2</button>
             <button onclick="loadVideo('https://la10hd.com/tv/liga1max.html')">Ligamax1</button>
             <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ligamax1.1</button>
-            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://streamtp1.com/global2.php?
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://micanaldeportivo.com/directvsports.php')">Direct Sport1</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct Sport2</button>
         </div>

@@ -511,12 +511,6 @@
                         <h4>Exitosa</h4>
                         <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?get=Ly9sdW5hLTEtdmlkZW8ubWVkaWFzZXJ2ZXIuZGlnaXRhbC9leGl0b3NhdHZfMjMzYi00YjQ5LWE3MjYtNWEzY2IwZTMyNDNjL2luZGV4LmZtcDQubTN1OA==')">Ver canal</button>
                     </div>
-                    <!-- Canal 3 -->
-                    <div class="grid-item">
-                        <img src="dd.jfif" alt="Latina1">
-                        <h4>Latina1</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/latina.html')">Ver canal</button>
-                    </div>
                     <div class="grid-item">
                         <img src="dd.jfif" alt="Latina">
                         <h4>Latina</h4>
@@ -539,11 +533,6 @@
                         <img src="gol.jpg" alt="golperu1">
                         <h4>golperu1</h4>
                         <button onclick="loadVideo('https://la10hd.com/tv/golperu.html')">Ver canal</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="gol.jpg" alt="golperu2">
-                        <h4>golperu2</h4>
-                        <button onclick="loadVideo('https://golazohd.com/mpd.php?id=deportv')">Ver canal</button>
                     </div>
                     <div class="grid-item">
                         <img src="gol.jpg" alt="golperu">
@@ -570,21 +559,7 @@
                         <h4>Ligamax1.1</h4>
                         <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ver canal</button>
                     </div>
-                    <div class="grid-item">
-                        <img src="Liga.png" alt="Ligamax1.2">
-                        <h4>Ligamax1.2</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://la12hd.com/vivo/canal.php?stream=liga1max')">Ver canal</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="Liga.png" alt="Ligamax1.3">
-                        <h4>Ligamax1.3</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://streamtp1.com/global2.php?stream=l1max')">Ver canal</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="Liga.png" alt="Ligamax1.4">
-                        <h4>Ligamax1.4</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Ver canal</button>
-                    </div>
+                  
                     <!-- Canal 7 -->
                     <div class="grid-item">
                         <img src="atv.jfif" alt="atv">
@@ -932,4 +907,3 @@
     </div>
 </body>
 </html>
-

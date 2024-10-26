@@ -314,39 +314,7 @@
         }
     </style>
     <script>
-        // Medidas de Seguridad para Evitar Inspección del Código
-        // Bloqueo de teclas comunes para abrir herramientas de desarrollador
-        document.addEventListener("keydown", function(e) {
-            // F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
-            if (
-                e.key === "F12" ||
-                (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
-                (e.ctrlKey && e.key === "U")
-            ) {
-                e.preventDefault();
-                alert("Inspección de código deshabilitada.");
-                window.close(); // Cierra la ventana actual
-            }
-        });
-
-        // Bloqueo del clic derecho
-        document.addEventListener("contextmenu", function(e) {
-            e.preventDefault();
-            alert("Clic derecho deshabilitado.");
-            window.close(); // Cierra la ventana actual
-        });
-
-        // Detección de apertura de consola y cierre automático
-        (function() {
-            const element = new Image();
-            Object.defineProperty(element, 'id', {
-                get: function() {
-                    alert("Inspección de código deshabilitada.");
-                    window.close(); // Cierra la ventana actual
-                }
-            });
-            console.log(element);
-        })();
+      
 
         let currentImageIndex = 0;
         let images = [];

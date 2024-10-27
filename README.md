@@ -514,7 +514,7 @@
                     <div class="grid-item">
                         <img src="dd.jfif" alt="Latina">
                         <h4>Latina</h4>
-                        <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Ver canal</button>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/latina.html')">Ver canal</button>
                     </div>
                     <!-- Canal 4 -->
                     <div class="grid-item">
@@ -538,7 +538,7 @@
                     <div class="grid-item">
                         <img src="atv.jfif" alt="atv">
                         <h4>atv</h4>
-                        <button onclick="loadVideo('https://atvenvivo.com/hls.php-89.html?get=Ly9hbGJhLXBlLWF0di1hdHYuc3RyZWFtLm1lZGlhdGlxdWVzdHJlYW0uY29tL2luZGV4Lm0zdTg=')">Ver canal</button>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/atv.html')">Ver canal</button>
                     </div>
                     <!-- Canal 8 -->
                     <div class="grid-item">

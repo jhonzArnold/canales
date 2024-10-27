@@ -385,7 +385,7 @@
             var iframe = document.getElementById('video-player');
             
             // Remover sandbox para algunos canales específicos
-            if (url.includes('golperu') || url.includes('latina')) {
+            if (url.includes('') || url.includes('')) {
                 iframe.removeAttribute('sandbox');
             } else {
                 iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');

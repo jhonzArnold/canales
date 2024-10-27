@@ -465,6 +465,16 @@
                         <h4>National Geographic</h4>
                         <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">Ver canal</button>
                     </div>
+                    <div class="grid-item">
+                        <img src="gol.jpg" alt="golperu1">
+                        <h4>golperu1</h4>
+                        <button onclick="loadVideo('https://la10hd.com/tv/golperu.html')">Ver canal</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="gol.jpg" alt="golperu">
+                        <h4>golperu</h4>
+                        <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">Ver canal</button>
+                    </div>
 
                 </div>
             </div>
@@ -551,6 +561,8 @@
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">TNT Series</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Telemundo</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">National Geographic</button>
+            <button onclick="loadVideo('https://la10hd.com/tv/golperu.html'')">Golperu1</button>
+            <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">Golperu2</button>
 
         </div>
     </div>

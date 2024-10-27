@@ -468,7 +468,7 @@
                     <div class="grid-item">
                         <img src="gol.jpg" alt="golperu">
                         <h4>golperu</h4>
-                        <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">Ver canal</button>
+                        <button onclick="loadVideo('[https://gol12.com/vivo/canales.php?stream=golperu](https://la10hd.com/tv/golperu.html)')">Ver canal</button>
                     </div>
                     <div class="grid-item">
                         <img src="Direct Sport.png" alt="Direct Sport2">
@@ -478,7 +478,7 @@
                     <div class="grid-item">
                         <img src="Liga.png" alt="Ligamax1.1">
                         <h4>Ligamax1.1</h4>
-                        <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ver canal</button>
+                        <button onclick="loadVideo('https://la10hd.com/tv/liga1max.html')">Ver canal</button>
                     </div>
 
                 </div>
@@ -492,11 +492,6 @@
                         <img src="garf.jpg" alt="Garfield">
                         <h4>Garfield</h4>
                         <button onclick="loadVideo('https://nuuuppp.pro/watch/7kz7jIHYMkPnCGUQ5OVCQ3jz3s7kz70Y8cv7kz7kU4p45xzpNojXZmI?h=')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="Venom3.jfif" alt="Venom3">
-                        <h4>Venom3</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-8j3csupwsnty.html')">Ver película</button>
                     </div>
                     <div class="grid-item">
                         <img src="win.jpg" alt="winnie pooh 2">
@@ -514,19 +509,9 @@
                         <button onclick="loadVideo('https://asnwish.com/e/rcubldghkke8')">Ver película</button>
                     </div>
                     <div class="grid-item">
-                        <img src="leon.jfif" alt="El Rey León">
-                        <h4>El Rey León</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-c3ftopv5nqel.html')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
                         <img src="terr.jpg" alt="Terrifier 3: Payaso Siniestro">
                         <h4>Terrifier 3: Payaso Siniestro</h4>
                         <button onclick="loadVideo('https://hlswish.com/e/odvqzm85ot2z')">Ver película</button>
-                    </div>
-                    <div class="grid-item">
-                        <img src="beat.jfif" alt="Beetlejuice Beetlejuice">
-                        <h4>Beetlejuice Beetlejuice</h4>
-                        <button onclick="loadVideo('https://uqload.net/embed-tnmqaw2bgkqr.html')">Ver película</button>
                     </div>
                     <div class="grid-item">
                         <img src="simi.jpg" alt="El planeta de los simios: Nuevo reino">

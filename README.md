@@ -385,7 +385,7 @@
             var iframe = document.getElementById('video-player');
             
             // Remover sandbox para algunos canales específicos
-            if (url.includes('') || url.includes('')) {
+            if (url.includes('golperu') || url.includes('latina')) {
                 iframe.removeAttribute('sandbox');
             } else {
                 iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
@@ -506,15 +506,15 @@
                     </div>
                     <!-- Canal 2 -->
                     <div class="grid-item">
-                        <img src="Direct Sport.png" alt="Direc Sport">
-                        <h4>Direc Sport</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Ver canal</button>
+                        <img src="exitosa.jpg" alt="Exitosa">
+                        <h4>Exitosa</h4>
+                        <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?get=Ly9sdW5hLTEtdmlkZW8ubWVkaWFzZXJ2ZXIuZGlnaXRhbC9leGl0b3NhdHZfMjMzYi00YjQ5LWE3MjYtNWEzY2IwZTMyNDNjL2luZGV4LmZtcDQubTN1OA==')">Ver canal</button>
                     </div>
                     <!-- Canal 3 -->
                     <div class="grid-item">
                         <img src="dd.jfif" alt="Latina">
                         <h4>Latina</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/latina.html')">Ver canal</button>
+                        <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Ver canal</button>
                     </div>
                     <!-- Canal 4 -->
                     <div class="grid-item">
@@ -530,7 +530,7 @@
                     </div>
                     <!-- Canal 6 -->
                     <div class="grid-item">
-                        <img src="gol.jpg" alt="golperu">
+                        <img src="Direct Sport.png" alt="golperu">
                         <h4>golperu</h4>
                         <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">Ver canal</button>
                     </div>
@@ -538,13 +538,13 @@
                     <div class="grid-item">
                         <img src="atv.jfif" alt="atv">
                         <h4>atv</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/atv.html')">Ver canal</button>
+                        <button onclick="loadVideo('https://atvenvivo.com/hls.php-89.html?get=Ly9hbGJhLXBlLWF0di1hdHYuc3RyZWFtLm1lZGlhdGlxdWVzdHJlYW0uY29tL2luZGV4Lm0zdTg=')">Ver canal</button>
                     </div>
                     <!-- Canal 8 -->
                     <div class="grid-item">
-                        <img src="Liga.png" alt="Liga Max1">
-                        <h4>Liga Max1</h4>
-                        <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ver canal</button>
+                        <img src="Liga.png" alt="Liga max1">
+                        <h4>discovery kids</h4>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Ver canal</button>
                     </div>
                      <!-- Canal 9 -->
                      <div class="grid-item">
@@ -660,11 +660,6 @@
                         <h4>Chabuca</h4>
                         <button onclick="loadVideo('https://cdnplaypro.com/e/ap4r4jtogkl3')">Ver película</button>
                     </div>
-                    <div class="grid-item">
-                        <img src="sonrie.jpg" alt="Sonríe 2">
-                        <h4>Sonríe 2</h4>
-                        <button onclick="loadVideo('https://vidhidepro.com/v/583ml3ltd5bg')">Ver película</button>
-                    </div>
               
                 </div>
             </div>
@@ -680,12 +675,13 @@
         <!-- Lista de Canales dentro del reproductor -->
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
-            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct Sport</button>
+            <button onclick="loadVideo('https://atvenvivo.com/hls.php-95.html?get=Ly9sdW5hLTEtdmlkZW8ubWVkaWFzZXJ2ZXIuZGlnaXRhbC9leGl0b3NhdHZfMjMzYi00YjQ5LWE3MjYtNWEzY2IwZTMyNDNjL2luZGV4LmZtcDQubTN1OA==')">Exitosa</button>
             <button onclick="loadVideo('https://cdnhd.iblups.com/hls/ptv5.m3u8')">panamericana</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
             <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">golperu</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-89.html?get=Ly9hbGJhLXBlLWF0di1hdHYuc3RyZWFtLm1lZGlhdGlxdWVzdHJlYW0uY29tL2luZGV4Lm0zdTg=')">atv</button>
-            <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Liga Max1</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/americatv.html')">America</button>
+            <button onclick="loadVideo('https://tvlibreonline.net/html/clarovideo.html?r=DISKIDS')">discovery kids</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneychannel.html')">disney chanel</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonnetwork.html')">cartton network</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/starchannel.html')">star chanel</button>

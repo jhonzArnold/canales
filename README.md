@@ -549,7 +549,7 @@
                     <div class="grid-item">
                         <img src="Liga.png" alt="Liga max1">
                         <h4>Liga max1</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Ver canal</button>
+                        <button onclick="loadVideo('https://la10hd.com/tv/liga1max.html')">Ver canal</button>
                     </div>
                      <!-- Canal 9 -->
                      <div class="grid-item">

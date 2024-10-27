@@ -549,7 +549,7 @@
                     <div class="grid-item">
                         <img src="Liga.png" alt="Liga max1">
                         <h4>Liga max1</h4>
-                        <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ver canal</button>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://la12hd.com/vivo/canal.php?stream=liga1max')">Ver canal</button>
                     </div>
                      <!-- Canal 9 -->
                      <div class="grid-item">
@@ -699,7 +699,7 @@
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Telemundo</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">National Geographic</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct sport</button>
-            <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Liga Max1</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://la12hd.com/vivo/canal.php?stream=liga1max')">Liga Max1</button>
 
         </div>
     </div>

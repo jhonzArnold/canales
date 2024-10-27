@@ -385,7 +385,7 @@
             var iframe = document.getElementById('video-player');
             
             // Remover sandbox para algunos canales específicos
-            if (url.includes('golperu') || url.includes('latina')|| url.includes('Direct Sport') ) {
+            if (url.includes('golperu') || url.includes('latina')|| url.includes('Direct Sport')|| url.includes('Liga max1')  ) {
                 iframe.removeAttribute('sandbox'); 
             } else {
                 iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');

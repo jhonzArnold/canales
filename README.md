@@ -385,7 +385,7 @@
             var iframe = document.getElementById('video-player');
             
             // Remover sandbox para algunos canales específicos
-            if (url.includes('golperu') || url.includes('latina')|| url.includes('Direct Sport')|| url.includes('Liga max1')  ) {
+            if (url.includes('golperu') || url.includes('latina')|| url.includes('Direct Sport')) {
                 iframe.removeAttribute('sandbox'); 
             } else {
                 iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
@@ -549,7 +549,7 @@
                     <div class="grid-item">
                         <img src="Liga.png" alt="Liga max1">
                         <h4>Liga max1</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://la12hd.com/vivo/canal.php?stream=liga1max')">Ver canal</button>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Ver canal</button>
                     </div>
                      <!-- Canal 9 -->
                      <div class="grid-item">

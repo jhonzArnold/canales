@@ -385,7 +385,7 @@
             var iframe = document.getElementById('video-player');
             
             // Remover sandbox para algunos canales específicos
-            if (url.includes('golperu') || url.includes('latina')|| url.includes('Direct Sport')) {
+            if (url.includes('golperu') || url.includes('latina')|| url.includes('Direct Sport')|| url.includes('Liga max1')) {
                 iframe.removeAttribute('sandbox'); 
             } else {
                 iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
@@ -699,7 +699,7 @@
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Telemundo</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">National Geographic</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct sport</button>
-            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://la12hd.com/vivo/canal.php?stream=liga1max')">Liga Max1</button>
+            <button onclick="loadVideo('https://la10hd.com/tv/liga1max.html')">Liga max1</button>
 
         </div>
     </div>

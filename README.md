@@ -691,10 +691,11 @@
             </div>
         </div>
     </div>
-    <div id="video-player-container">
+     <div id="video-player-container">
         <button class="close-button" onclick="closeVideo()">✖</button>
         <button class="show-channels-button" onclick="toggleChannelList()">📺</button>
-        <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
+        <!-- Añadido sandbox al iframe -->
+        <iframe id="video-player" frameborder="0" allowfullscreen sandbox="allow-scripts"></iframe>
         <div class="channel-list">
             <button onclick="loadVideo('https://geo.dailymotion.com/player.html?video=x7x4dgx')">Willax</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>

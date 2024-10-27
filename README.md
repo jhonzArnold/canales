@@ -264,7 +264,7 @@
             var iframe = document.getElementById('video-player');
             
             // Remover sandbox para algunos canales específicos
-            if (url.includes('golperu') || url.includes('latina')) {
+            if (url.includes('golperu') || url.includes('latina')|| url.includes('Venom3')) {
                 iframe.removeAttribute('sandbox');
             } else {
                 iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
@@ -477,6 +477,11 @@
                         <img src="garf.jpg" alt="Garfield">
                         <h4>Garfield</h4>
                         <button onclick="loadVideo('https://nuuuppp.pro/watch/7kz7jIHYMkPnCGUQ5OVCQ3jz3s7kz70Y8cv7kz7kU4p45xzpNojXZmI?h=')">Ver película</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Venom3.jfif" alt="Venom3">
+                        <h4>Venom3</h4>
+                        <button onclick="loadVideo('https://uqload.net/embed-8j3csupwsnty.html')">Ver película</button>
                     </div>
                     <div class="grid-item">
                         <img src="win.jpg" alt="winnie pooh 2">

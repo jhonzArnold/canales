@@ -544,7 +544,7 @@
                     <div class="grid-item">
                         <img src="Liga.png" alt="Liga Max1">
                         <h4>Liga Max1</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Ver canal</button>
+                        <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ver canal</button>
                     </div>
                      <!-- Canal 9 -->
                      <div class="grid-item">
@@ -660,6 +660,11 @@
                         <h4>Chabuca</h4>
                         <button onclick="loadVideo('https://cdnplaypro.com/e/ap4r4jtogkl3')">Ver película</button>
                     </div>
+                    <div class="grid-item">
+                        <img src="sonrie.jpg" alt="Sonríe 2">
+                        <h4>Sonríe 2</h4>
+                        <button onclick="loadVideo('https://vidhidepro.com/v/583ml3ltd5bg')">Ver película</button>
+                    </div>
               
                 </div>
             </div>
@@ -680,7 +685,7 @@
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-93.html?get=Ly9qaXJlaC0yLWhscy12aWRlby11cy1pc3AuZHBzLmxpdmUvaGxzLXZpZGVvLzU2N2ZmZGUzZmEzMTlmYWRmMzQxOWVmZGEyNTYxOTQ1NjIzMWRmZWEvbGF0aW5hL2xhdGluYS5zbWlsL3BsYXlsaXN0Lm0zdTg/ZHBzc2lkPWIyNjg1MzMxMjAxNjZiZmYyYmJjNjMzNyZzaWQ9YmE1dDFsMXhiMjUzODA5MTY3MjY2YmZmMmJkOTk0OWUmbmR2Yz0w')">Latina</button>
             <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=golperu')">golperu</button>
             <button onclick="loadVideo('https://atvenvivo.com/hls.php-89.html?get=Ly9hbGJhLXBlLWF0di1hdHYuc3RyZWFtLm1lZGlhdGlxdWVzdHJlYW0uY29tL2luZGV4Lm0zdTg=')">atv</button>
-            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Liga Max1</button>
+            <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Liga Max1</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneychannel.html')">disney chanel</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonnetwork.html')">cartton network</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/starchannel.html')">star chanel</button>

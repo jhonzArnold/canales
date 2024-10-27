@@ -385,7 +385,7 @@
             var iframe = document.getElementById('video-player');
             
             // Remover sandbox para algunos canales específicos
-            if (url.includes('golperu') || url.includes('latina')|| url.includes('Direc sport') ) {
+            if (url.includes('golperu') || url.includes('latina')|| url.includes('Direct Sport') ) {
                 iframe.removeAttribute('sandbox'); 
             } else {
                 iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-autoplay');
@@ -544,12 +544,12 @@
                     <div class="grid-item">
                         <img src="Direct Sport.png" alt="Direct Sport">
                         <h4>Direct Sport</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Ver canal</button>
+                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Ver canal</button>
                     </div>
                     <div class="grid-item">
-                        <img src="Liga.png" alt="Direc sport">
-                        <h4>Direc sport</h4>
-                        <button onclick="loadVideo('https://nebunexa.co/red/?get=https://micanaldeportivo.com/directvsports.php')">Ver canal</button>
+                        <img src="Liga.png" alt="Liga max1">
+                        <h4>Liga max1</h4>
+                        <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Ver canal</button>
                     </div>
                      <!-- Canal 9 -->
                      <div class="grid-item">
@@ -698,7 +698,8 @@
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">TNT Series</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Telemundo</button>
             <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">National Geographic</button>
-            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://micanaldeportivo.com/directvsports.php')">Direc sport</button>
+            <button onclick="loadVideo('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct sport</button>
+            <button onclick="loadVideo('https://gol12.com/vivo/canales.php?stream=l1max')">Liga Max1</button>
 
         </div>
     </div>

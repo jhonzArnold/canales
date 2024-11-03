@@ -52,22 +52,55 @@
             justify-content: center;
             gap: 20px;
         }
-        /* Carrusel de imágenes */
-        .carousel {
-            width: 100vw;
-            height: 80vh;
-            overflow: hidden;
-            background-color: #333;
-        }
-        .carousel img {
-            width: 100%;
-            height: 100%;
-            display: none;
-            object-fit: cover;
-        }
-        .carousel img.active {
-            display: block;
-        }
+        /* Configuración general para eliminar espacios en blanco */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Ajustes de la cabecera */
+.nav-container {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+      /* Carrusel de imágenes que ocupa toda la pantalla sin espacios */
+.carousel {
+    width: 100vw; /* Abarca todo el ancho de la pantalla */
+    height: calc(100vh - 40px); /* Resta la altura de la cabecera */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.carousel img {
+    width: 100vw; /* Ocupa todo el ancho */
+    height: 100vh; /* Asegura que cubra toda la altura */
+    object-fit: cover; /* Cubre el contenedor sin distorsión */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+
         /* Contenedor de canales y películas */
         .content-container {
             display: none;
@@ -143,6 +176,7 @@
             width: 200px;
             z-index: 1002;
         }
+        
     </style>
 </head>
 <body>
@@ -223,6 +257,10 @@
                 <img src="gol.jpg" alt="Gol Peru">
                 <button onclick="reproducirIframe('https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru</button>
             </div>
+            <div class="channel-box">
+                <img src="qq.png" alt="National Geographic">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">National Geographic</button>
+            </div>
         </div>
         </div>
 
@@ -254,7 +292,7 @@
     <div id="iframe-player-container">
         <span class="control-button close-button" onclick="cerrarIframe()">✖</span>
         <span class="control-button tv-button" onclick="toggleMenu()">📺</span>
-        <iframe id="iframe-player" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-forms"></iframe>
+        <iframe id="iframe-player" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <!-- Menú de canales flotante accesible desde ambos reproductores -->

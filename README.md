@@ -255,12 +255,36 @@ body, html {
             </div>
             <div class="channel-box">
                 <img src="gol.jpg" alt="Gol Peru">
-                <button onclick="reproducirIframe('https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru</button>
+                <button onclick="reproducirM3U8('https://server.betzta.com/lb/golperu/index.m3u8?token=29c51188b2833e882b43400a19523c7d3c53ec09-aed7a084501b2286ca4594aa0063a17f-1730658382-1730647582&remote=38.')">Ver Gol Peru1</button>
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru2</button>
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/golperu.html')">Ver Gol Peru2</button>
+                <button onclick="reproducirIframe('https://la10hd.com/tv/golperu.html')">Ver Gol Peru2</button>
+                <button onclick="reproducirIframe('https://golazohd.com/mpd.php?id=deportv')">Ver Gol Peru2</button>
+
+            
             </div>
             <div class="channel-box">
                 <img src="qq.png" alt="National Geographic">
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">National Geographic</button>
             </div>
+            <div class="channel-box">
+                <img src="se.png" alt="TNT Series">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">Ver canal</button>
+            </div>
+            <div class="channel-box">
+                <img src="tet.png" alt="Telemundo">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Ver canal</button>
+            </div>
+            <div class="channel-box">
+                <img src="caa.png" alt="Cartoonito">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonito.html')">Ver canal</button>
+            </div>
+            <div class="channel-box">
+                <img src="ju.jfif" alt="Disney Junior">
+                <button onclick="reproducirIframe'https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneyjr.html')">Ver canal</button>
+            </div>
+
+
         </div>
         </div>
 
@@ -365,28 +389,10 @@ body, html {
 
         function reproducirIframe(enlaceIframe) {
             cerrarReproductor(); // Cerrar cualquier M3U8 abierto
-            const iframe = document.getElementById('iframe-player');
-            iframe.src = enlaceIframe;
+            document.getElementById('iframe-player').src = enlaceIframe;
             document.getElementById('iframe-player-container').style.display = 'block';
             document.getElementById('channel-menu').style.display = 'none';
-            
-            // Solicitar pantalla completa y orientación vertical
-            if (iframe.requestFullscreen) {
-                iframe.requestFullscreen();
-            } else if (iframe.webkitRequestFullscreen) { // Safari
-                iframe.webkitRequestFullscreen();
-            } else if (iframe.msRequestFullscreen) { // IE/Edge
-                iframe.msRequestFullscreen();
-            }
-
-            // Bloquear orientación a modo vertical si es soportado
-            if (screen.orientation && screen.orientation.lock) {
-                screen.orientation.lock("portrait").catch(function(error) {
-                    console.log("Error al bloquear orientación:", error);
-                });
-            }
         }
-
           
         // Bloquear anuncios y redirecciones
         bloquearAnuncios(iframe);

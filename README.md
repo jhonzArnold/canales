@@ -265,13 +265,14 @@ body, html {
         </div>
 
         <!-- Películas -->
-        <div class="movie-box">
+        <div class="content-container" id="peliculas">
+            <div class="movie-box">
                 <img src="garf.jpg" alt="Garfield">
-                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/7kz7jIHYMkPnCGUQ5OVCQ3jz3s7kz70Y8cv7kz7kU4p45xzpNojXZmI?h=')">Ver Película 1</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/7kz7jIHYMkPnCGUQ5OVCQ3jz3s7kz70Y8cv7kz7kU4p45xzpNojXZmI?h=')">Ver Garfield</button>
             </div>
             <div class="movie-box">
-                <img src="Venom3.jfif" alt="Venom">
-                <button onclick="reproducirIframe('https://vidhidefast.com/v/lxni6eh6v7ds')">Ver Película 2</button>
+                <img src="Venom3.jfif" alt="Venom3">
+                <button onclick="reproducirIframe('https://vidhidefast.com/v/lxni6eh6v7ds')">Ver Venom3</button>
             </div>
             <div class="movie-box">
                 <img src="robot.jfif" alt="Robot salvaje">
@@ -292,6 +293,7 @@ body, html {
         <span class="control-button close-button" onclick="cerrarIframe()">✖</span>
         <span class="control-button tv-button" onclick="toggleMenu()">📺</span>
         <iframe id="iframe-player" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+        
     </div>
 
     <!-- Menú de canales flotante accesible desde ambos reproductores -->
@@ -363,10 +365,31 @@ body, html {
 
         function reproducirIframe(enlaceIframe) {
             cerrarReproductor(); // Cerrar cualquier M3U8 abierto
-            document.getElementById('iframe-player').src = enlaceIframe;
+            const iframe = document.getElementById('iframe-player');
+            iframe.src = enlaceIframe;
             document.getElementById('iframe-player-container').style.display = 'block';
             document.getElementById('channel-menu').style.display = 'none';
+            
+            // Solicitar pantalla completa y orientación vertical
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) { // Safari
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+
+            // Bloquear orientación a modo vertical si es soportado
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock("portrait").catch(function(error) {
+                    console.log("Error al bloquear orientación:", error);
+                });
+            }
         }
+
+          
+        // Bloquear anuncios y redirecciones
+        bloquearAnuncios(iframe);
 
         function cerrarIframe() {
             document.getElementById('iframe-player').src = '';

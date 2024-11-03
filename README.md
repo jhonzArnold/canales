@@ -257,9 +257,9 @@ body, html {
                 <img src="gol.jpg" alt="Gol Peru">
                 <button onclick="reproducirM3U8('https://server.betzta.com/lb/golperu/index.m3u8?token=29c51188b2833e882b43400a19523c7d3c53ec09-aed7a084501b2286ca4594aa0063a17f-1730658382-1730647582&remote=38.')">Ver Gol Peru1</button>
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru2</button>
-                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/golperu.html')">Ver Gol Peru2</button>
-                <button onclick="reproducirIframe('https://la10hd.com/tv/golperu.html')">Ver Gol Peru2</button>
-                <button onclick="reproducirIframe('https://golazohd.com/mpd.php?id=deportv')">Ver Gol Peru2</button>
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/golperu.html')">Ver Gol Peru3</button>
+                
+                
 
             
             </div>
@@ -300,7 +300,12 @@ body, html {
             </div>
             <div class="movie-box">
                 <img src="robot.jfif" alt="Robot salvaje">
-                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/6fVeH9e1DDaSAJfCoOccOY7kz7jh2ojRoDxoTWfvNOSPPI?h=')">Ver Robot salvaje</button>
+                <button onclick="reproducirIframe('https://hlswish.com/e/fprszlndo9n1')">Ver Robot salvaje 1</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/6fVeH9e1DDaSAJfCoOccOY7kz7jh2ojRoDxoTWfvNOSPPI?h=')">Ver Robot salvaje1.1</button>
+            </div>
+            <div class="movie-box">
+                <img src="terr.jpg" alt="Terrifer3">
+                <button onclick="reproducirIframe('https://vidsrc.xyz/embed/movie/tt27911000')">Ver Terrifer3</button>
             </div>
         </div>
     </div>

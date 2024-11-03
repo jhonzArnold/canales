@@ -265,14 +265,13 @@ body, html {
         </div>
 
         <!-- Películas -->
-        <div class="content-container" id="peliculas">
-            <div class="movie-box">
-                <img src="pelicula1.jpg" alt="Película 1">
+        <div class="movie-box">
+                <img src="garf.jpg" alt="Garfield">
                 <button onclick="reproducirIframe('https://nuuuppp.pro/watch/7kz7jIHYMkPnCGUQ5OVCQ3jz3s7kz70Y8cv7kz7kU4p45xzpNojXZmI?h=')">Ver Película 1</button>
             </div>
             <div class="movie-box">
-                <img src="pelicula2.jpg" alt="Película 2">
-                <button onclick="reproducirIframe('ENLACE_IFRAME_PELICULA_2')">Ver Película 2</button>
+                <img src="Venom3.jfif" alt="Venom">
+                <button onclick="reproducirIframe('https://vidhidefast.com/v/lxni6eh6v7ds')">Ver Película 2</button>
             </div>
             <div class="movie-box">
                 <img src="pelicula3.jpg" alt="Película 3">

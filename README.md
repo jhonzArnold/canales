@@ -291,7 +291,7 @@ body, html {
     <div id="iframe-player-container">
         <span class="control-button close-button" onclick="cerrarIframe()">✖</span>
         <span class="control-button tv-button" onclick="toggleMenu()">📺</span>
-        <iframe id="iframe-player" frameborder="0" allowfullscreen></iframe>
+        <iframe id="iframe-player" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
     </div>
 
     <!-- Menú de canales flotante accesible desde ambos reproductores -->

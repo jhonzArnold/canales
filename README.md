@@ -323,6 +323,18 @@ body, html {
                 <img src="Aquaman y el reino perdido.jfif" alt="aquaman3">
                 <button onclick="reproducirIframe('https://asnwish.com/e/zidnda5xvskl')">Ver aquaman3</button>
             </div>
+            <div class="movie-box">
+                <img src="wonka.jfif" alt="wonka">
+                <button onclick="reproducirIframe('https://asnwish.com/e/1gtafknvymij')">Ver wonka</button>
+            </div>
+            <div class="movie-box">
+                <img src="Kung Fu Panda 4.jfif" alt="kunfu panda4">
+                <button onclick="reproducirIframe('https://jodwish.com/e/qfmi115yrwg8')">Ver kunfu panda4</button>
+            </div>
+            <div class="movie-box">
+                <img src="blue beete.jfif" alt="blue beete">
+                <button onclick="reproducirIframe('https://jodwish.com/e/qfmi115yrwg8')">Ver blue beete</button>
+            </div>
         </div>
     </div>
 

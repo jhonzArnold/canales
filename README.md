@@ -240,6 +240,10 @@ body, html {
                 <button onclick="reproducirM3U8('https://cdnhd.iblups.com/hls/777b4d4cc0984575a7d14f6ee57dbcaf.m3u8')">Ver Tv Peru</button>
             </div>
             <div class="channel-box">
+                <img src="sony.png" alt="warner">
+                <button onclick="reproducirIframe('https://clarovideo.sdfgnksbounce.com/warnerbrostv.php?url=aHR0cHM6Ly9wZWxpdmVjaGFubmVsc2Rhc2gtMS5jbGFyb3ZpZGVvLmNvbS9icGstdHYvV0FSTkVSQ0hBTk5FTEhEL2Rhc2hfZmsvaW5kZXgubXBk&k1=MGVmY2E0M2RjOTBmMTY5MjVkMTA0YWI0MjI4MjE4ZDA=&k2=YmM4NmRlYTYxZTlhNmY0MDEyZDg4NDM5YTZlZjZjYzg=&aut=true&lang=0')">Ver warner</button>
+            </div>
+            <div class="channel-box">
                 <img src="sony.png" alt="Sony">
                 <button onclick="reproducirM3U8('https://cdn.klowdtv.net/803B48A/n1.klowdtv.net/live1/cine_720p/playlist.m3u8')">Ver Sony</button>
             </div>
@@ -270,6 +274,10 @@ body, html {
             <div class="channel-box">
                 <img src="se.png" alt="TNT Series">
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">Ver canal</button>
+            </div>
+            <div class="channel-box">
+                <img src="ees.png" alt="Star Chanel">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/starchannel.html')">Ver Star Chanel</button>
             </div>
             <div class="channel-box">
                 <img src="tet.png" alt="Telemundo">

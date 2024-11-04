@@ -333,7 +333,7 @@ body, html {
             </div>
             <div class="movie-box">
                 <img src="blue beete.jfif" alt="blue beete">
-                <button onclick="reproducirIframe('https://jodwish.com/e/qfmi115yrwg8')">Ver blue beete</button>
+                <button onclick="reproducirIframe('https://wishfast.top/e/qe93f7fzquee')">Ver blue beete</button>
             </div>
         </div>
     </div>

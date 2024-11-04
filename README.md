@@ -281,7 +281,7 @@ body, html {
             </div>
             <div class="channel-box">
                 <img src="ju.jfif" alt="Disney Junior">
-                <button onclick="reproducirIframe'https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneyjr.html')">Ver canal</button>
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneyjr.html')">Ver Disney Junior</button>
             </div>
 
 
@@ -306,6 +306,22 @@ body, html {
             <div class="movie-box">
                 <img src="terr.jpg" alt="Terrifer3">
                 <button onclick="reproducirIframe('https://vidsrc.xyz/embed/movie/tt27911000')">Ver Terrifer3</button>
+            </div>
+            <div class="movie-box">
+                <img src="La Sustancia.jfif" alt="La Sustancia">
+                <button onclick="reproducirIframe('https://hlswish.com/e/t82ki8yd6pyb')">Ver La Sustancia</button>
+            </div>
+            <div class="movie-box">
+                <img src="al.jpeg" alt="Alien: Romulus">
+                <button onclick="reproducirIframe('https://hlswish.com/e/xnx3im559fcl')">Ver Alien: Romulus</button>
+            </div>
+            <div class="movie-box">
+                <img src="yoa.jfif" alt="Yo antes de ti">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/mbj6m7jgue2c')">Ver Yo antes de ti</button>
+            </div>
+            <div class="movie-box">
+                <img src="Aquaman y el reino perdido.jfif" alt="aquaman3">
+                <button onclick="reproducirIframe('https://asnwish.com/e/zidnda5xvskl')">Ver aquaman3</button>
             </div>
         </div>
     </div>

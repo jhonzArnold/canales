@@ -343,6 +343,22 @@ body, html {
                 <img src="blue beete.jfif" alt="blue beete">
                 <button onclick="reproducirIframe('https://wishfast.top/e/qe93f7fzquee')">Ver blue beete</button>
             </div>
+                <div class="movie-box">
+                <img src="rompe.jfif" alt="Rompe el circulo">
+                <button onclick="reproducirIframe('https://playerwish.com/e/l138ujc8s49q')">Ver Rompe el circulo</button>
+            </div>
+            <div class="movie-box">
+                <img src="simi.jpg" alt="el reino de los simios">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/kfqw8uluja30')">Ver el reino de los simios</button>
+            </div>
+            <div class="movie-box">
+                <img src="kunfu.jfif" alt="Kunfu panda4">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/kfqw8uluja30')">Ver Kunfu panda4</button>
+            </div>
+            <div class="movie-box">
+                <img src="Maverick.jfif" alt="Maverick3">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/13ix4v1ubhno')">Ver Maverick3</button>
+            </div>
         </div>
     </div>
 

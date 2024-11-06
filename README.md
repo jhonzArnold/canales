@@ -359,6 +359,22 @@ body, html {
                 <img src="Maverick.jfif" alt="Maverick3">
                 <button onclick="reproducirIframe('https://fastbrisk.com/e/13ix4v1ubhno')">Ver Maverick3</button>
             </div>
+             <div class="movie-box">
+                <img src="sonrie 2.jfif" alt="sonrie 2">
+                <button onclick="reproducirIframe('https://hlswish.com/e/qvctrkg5gvgo')">Ver sonrie 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="mi villano.jfif" alt="mi villano favorito4">
+                <button onclick="reproducirIframe('https://wishonly.site/e/giowv1nifc8l')">Ver mi villano favorito4</button>
+            </div>
+            <div class="movie-box">
+                <img src="intensamente2.jfif" alt="intensamente2">
+                <button onclick="reproducirIframe('https://wishonly.site/e/b132rbzrg2su')">Ver intensamente2</button>
+            </div>
+            <div class="movie-box">
+                <img src="Wish.jfif" alt="Wish: El Poder De Los Deseos">
+                <button onclick="reproducirIframe('https://asnwish.com/e/k6n1mdoo0x1j')">Ver Wish: El Poder De Los Deseos</button>
+            </div>
         </div>
     </div>
 

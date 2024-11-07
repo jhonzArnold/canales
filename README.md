@@ -394,12 +394,17 @@ body, html {
             </div>
             <div class="movie-box">
                 <img src="atlas.jpg" alt="Atlas">
-                <button onclick="reproducirIframe('https://toddpartneranimal.com/e/jgncsghkoozd')">Ver Atlas</button>
-                <button onclick="reproducirIframe('https://dood.li/e/utvr0s4i5qbs')">Ver Atlas</button>
+                <button onclick="reproducirIframe('https://dood.li/e/9v7cb6m7o6f9')">Ver Atlas</button>
+                <button onclick="reproducirIframe('https://file-zz40pd56-embed.com/ptsd/d256qxr4b2ua')">Ver Atlas</button>
             </div>
             <div class="movie-box">
                 <img src="coco.jpg" alt="Coco">
                 <button onclick="reproducirIframe('https://playerwish.com/e/pqgbmvu156j7')">Ver Coco</button>
+            </div>
+            <div class="movie-box">
+                <img src="hasta el ultimo hombre.jfif" alt="Hasta el ultimo hombre">
+                <button onclick="reproducirIframe('https://dood.li/d/11mp78vohzdb')">Ver Hasta el ultimo hombre</button>
+                <button onclick="reproducirIframe('https://file-zz40pd56-embed.com/ptsd/t06wrd0bi0sk')">Ver Hasta el ultimo hombre</button>
             </div>
             
 

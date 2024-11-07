@@ -240,10 +240,6 @@ body, html {
                 <button onclick="reproducirM3U8('https://cdnhd.iblups.com/hls/777b4d4cc0984575a7d14f6ee57dbcaf.m3u8')">Ver Tv Peru</button>
             </div>
             <div class="channel-box">
-                <img src="sony.png" alt="warner">
-                <button onclick="reproducirIframe('https://clarovideo.sdfgnksbounce.com/warnerbrostv.php?url=aHR0cHM6Ly9wZWxpdmVjaGFubmVsc2Rhc2gtMS5jbGFyb3ZpZGVvLmNvbS9icGstdHYvV0FSTkVSQ0hBTk5FTEhEL2Rhc2hfZmsvaW5kZXgubXBk&k1=MGVmY2E0M2RjOTBmMTY5MjVkMTA0YWI0MjI4MjE4ZDA=&k2=YmM4NmRlYTYxZTlhNmY0MDEyZDg4NDM5YTZlZjZjYzg=&aut=true&lang=0')">Ver warner</button>
-            </div>
-            <div class="channel-box">
                 <img src="sony.png" alt="Sony">
                 <button onclick="reproducirM3U8('https://cdn.klowdtv.net/803B48A/n1.klowdtv.net/live1/cine_720p/playlist.m3u8')">Ver Sony</button>
             </div>
@@ -262,11 +258,18 @@ body, html {
                 <button onclick="reproducirM3U8('https://server.betzta.com/lb/golperu/index.m3u8?token=29c51188b2833e882b43400a19523c7d3c53ec09-aed7a084501b2286ca4594aa0063a17f-1730658382-1730647582&remote=38.')">Ver Gol Peru1</button>
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru2</button>
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/golperu.html')">Ver Gol Peru3</button>
-                
-                
+                </div>
+                <div class="channel-box">
+                    <img src="qq.png" alt="Direct Sport">
+                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct Sport</button>
+                </div>
+                <div class="channel-box">
+                    <img src="qq.png" alt="Liga max">
+                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://streamtp1.com/global2.php?stream=l1max')">Liga max1</button>
+                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Liga max2</button>
+                    
 
-            
-            </div>
+                </div>
             <div class="channel-box">
                 <img src="qq.png" alt="National Geographic">
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/natgeo.html')">National Geographic</button>
@@ -274,10 +277,6 @@ body, html {
             <div class="channel-box">
                 <img src="se.png" alt="TNT Series">
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">Ver canal</button>
-            </div>
-            <div class="channel-box">
-                <img src="ees.png" alt="Star Chanel">
-                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/starchannel.html')">Ver Star Chanel</button>
             </div>
             <div class="channel-box">
                 <img src="tet.png" alt="Telemundo">
@@ -312,8 +311,13 @@ body, html {
                 <button onclick="reproducirIframe('https://nuuuppp.pro/watch/6fVeH9e1DDaSAJfCoOccOY7kz7jh2ojRoDxoTWfvNOSPPI?h=')">Ver Robot salvaje1.1</button>
             </div>
             <div class="movie-box">
+                <img src="terr1.jfif" alt="Terrifer2">
+                <button onclick="reproducirIframe('https://hlswish.com/e/fwqda2ztwl53')">Ver Terrifer2</button>
+            </div>
+            <div class="movie-box">
                 <img src="terr.jpg" alt="Terrifer3">
-                <button onclick="reproducirIframe('https://vidsrc.xyz/embed/movie/tt27911000')">Ver Terrifer3</button>
+                <button onclick="reproducirIframe('https://hlswish.com/e/qmr8qq3vg1wi')">Ver Terrifer3(español-cn anuncio)</button>
+                <button onclick="reproducirIframe('https://hlswish.com/e/scxo1sq1nkno')">Ver Terrifer3(subtitulado)</button>
             </div>
             <div class="movie-box">
                 <img src="La Sustancia.jfif" alt="La Sustancia">
@@ -341,9 +345,9 @@ body, html {
             </div>
             <div class="movie-box">
                 <img src="blue beete.jfif" alt="blue beete">
-                <button onclick="reproducirIframe('https://wishfast.top/e/qe93f7fzquee')">Ver blue beete</button>
+                <button onclick="reproducirIframe('https://jodwish.com/e/qfmi115yrwg8')">Ver blue beete</button>
             </div>
-                <div class="movie-box">
+            <div class="movie-box">
                 <img src="rompe.jfif" alt="Rompe el circulo">
                 <button onclick="reproducirIframe('https://playerwish.com/e/l138ujc8s49q')">Ver Rompe el circulo</button>
             </div>
@@ -359,7 +363,7 @@ body, html {
                 <img src="Maverick.jfif" alt="Maverick3">
                 <button onclick="reproducirIframe('https://fastbrisk.com/e/13ix4v1ubhno')">Ver Maverick3</button>
             </div>
-             <div class="movie-box">
+            <div class="movie-box">
                 <img src="sonrie 2.jfif" alt="sonrie 2">
                 <button onclick="reproducirIframe('https://hlswish.com/e/qvctrkg5gvgo')">Ver sonrie 2</button>
             </div>
@@ -375,6 +379,30 @@ body, html {
                 <img src="Wish.jfif" alt="Wish: El Poder De Los Deseos">
                 <button onclick="reproducirIframe('https://asnwish.com/e/k6n1mdoo0x1j')">Ver Wish: El Poder De Los Deseos</button>
             </div>
+            <div class="movie-box">
+                <img src="La Sociedad De La Nieve.jfif" alt="La Sociedad De La Nieve">
+                <button onclick="reproducirIframe('https://vi2.co/player/1/0/?v=6382504')">Ver La Sociedad De La Nieve</button>
+            </div>
+            <div class="movie-box">
+                <img src="La decisión mas dificil.jfif" alt="La decisión mas dificil">
+                <button onclick="reproducirIframe('https://file-zz40pd56-embed.com/ptsd/st0ch68w0nyv')">Ver La decisión mas dificil</button>
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/gy6xpz0nkrj0')">Ver La decisión mas dificil</button>
+            </div>
+            <div class="movie-box">
+                <img src="el astronauta.jpg" alt="El astronauta">
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/vK3M7XPZkRrBvhtSTpAU1I7kz79BJbmQX8j3jz3xy3jz3bjlnxIs?h=')">Ver El astronauta</button>
+            </div>
+            <div class="movie-box">
+                <img src="atlas.jpg" alt="Atlas">
+                <button onclick="reproducirIframe('https://toddpartneranimal.com/e/jgncsghkoozd')">Ver Atlas</button>
+                <button onclick="reproducirIframe('https://dood.li/e/utvr0s4i5qbs')">Ver Atlas</button>
+            </div>
+            <div class="movie-box">
+                <img src="coco.jpg" alt="Coco">
+                <button onclick="reproducirIframe('https://playerwish.com/e/pqgbmvu156j7')">Ver Coco</button>
+            </div>
+            
+
         </div>
     </div>
 

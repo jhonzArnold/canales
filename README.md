@@ -23,12 +23,14 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-image: url('fondo.jpg');
-            background-size: cover;
+            background-image: url('https://img.global.news.samsung.com/mx/wp-content/uploads/2022/08/MX_TV_Mockup_03-1.jpg');
+            background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
         }
         .login-box {
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 20px 30px;
             border-radius: 8px;
             color: white;
@@ -77,18 +79,15 @@ body, html {
 }
       /* Carrusel de imágenes que ocupa toda la pantalla sin espacios */
 .carousel {
-    width: 100vw; /* Abarca todo el ancho de la pantalla */
-    height: calc(100vh - 40px); /* Resta la altura de la cabecera */
-    margin: 0; /* Sin margen */
-    padding: 0; /* Sin relleno */
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
+    width: 100vw;
+            height: 80vh;
+            overflow: hidden;
+            background-color: #333;
 }
 
 .carousel img {
-    width: 100vw; /* Ocupa todo el ancho */
-    height: 100vh; /* Asegura que cubra toda la altura */
+    width: 100%;
+    height: 100%;
     object-fit: cover; /* Cubre el contenedor sin distorsión */
     position: absolute;
     top: 0;
@@ -101,33 +100,77 @@ body, html {
 }
 
 
+.content-container {
+        display: none;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
         /* Contenedor de canales y películas */
-        .content-container {
-            display: none;
-            padding: 20px;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .channel-box, .movie-box {
-            background-color: #eaeaea;
-            width: 150px;
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .channel-box img, .movie-box img {
-            width: 100%;
-            border-radius: 4px;
-        }
+    .content-container {
+        display: none;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .channel-box, .movie-box {
+        background-color: #050505;
+        border: 1px solid black;
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .channel-box img, .movie-box img {
+        width: 100%;
+        max-width: 150px;
+        border-radius: 4px;
+    }
+    .channel-box button, .movie-box button {
+        background-color: #000;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        width: 100%;
+        border: none;
+        outline: none;
+        transition: box-shadow 0.3s ease;
+    }
+    .channel-box button:hover, .channel-box button:focus,
+    .movie-box button:hover, .movie-box button:focus {
+        box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+    }
+    .channel-box,
+    .movie-box {
+        width: auto;
+        padding: 10px;
+    }
+    .channel-box button,
+    .movie-box button {
+        margin-top: 10px;
+    }
         button {
-            background-color: #007bff;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-            width: 100%;
-        }
+            background-color: #000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    border: none; /* Quita el borde */
+    outline: none; /* Elimina el contorno */
+    transition: box-shadow 0.3s ease; /* Transición para la retroiluminación */
+}
+button:hover, button:focus {
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6); /* Retroiluminación al pasar el cursor o enfocar */
+}
         /* Reproductor de video en pantalla completa */
         #video-player-container,
         #iframe-player-container {
@@ -176,6 +219,9 @@ body, html {
             width: 200px;
             z-index: 1002;
         }
+        .logout-button {
+            background-color: red; /* Color rojo para el botón de cerrar sesión */
+        }
         
     </style>
 </head>
@@ -199,6 +245,8 @@ body, html {
                 <button onclick="showSection('inicio')">Inicio</button>
                 <button onclick="showSection('canales')">Canales</button>
                 <button onclick="showSection('peliculas')">Películas</button>
+                <button onclick="showSection('Series')">Series</button>
+                <button class="logout-button" onclick="logout()">Cerrar Sesión</button> <!-- Botón de cerrar sesión -->
             </div>
         </div>
 
@@ -406,8 +454,18 @@ body, html {
                 <button onclick="reproducirIframe('https://dood.li/d/11mp78vohzdb')">Ver Hasta el ultimo hombre</button>
                 <button onclick="reproducirIframe('https://file-zz40pd56-embed.com/ptsd/t06wrd0bi0sk')">Ver Hasta el ultimo hombre</button>
             </div>
-            
-
+        </div>
+    </div>
+    <!-- Series -->
+    <div class="content-container" id="Series">
+        <div class="movie-box">
+            <img src="pelicula1.jpg" alt="am">
+            <button onclick="toggleChapters('am')">Ver am</button>
+            <div id="am-chapters" style="display:none;">
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am1')">Ver am 1</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am2')">Ver am 2</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am3')">Ver am 3</button>
+            </div>
         </div>
     </div>
 
@@ -450,20 +508,38 @@ body, html {
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
     <script>
         function login() {
-            const id = document.getElementById("id").value;
-            const password = document.getElementById("password").value;
-            if (id === "jhon" && password === "frio123") {
+    const id = document.getElementById("id").value;
+    const password = document.getElementById("password").value;
+    if (id === "jhon" && password === "frio123") {
+        localStorage.setItem('loggedIn', 'true'); // Guardar estado de sesión
+        document.querySelector('.login-container').style.display = 'none';
+        document.querySelector('.main-container').style.display = 'block';
+        startCarousel();
+    } else {
+        alert("ID o contraseña incorrectos.");
+    }
+}
+function logout() {
+    localStorage.removeItem('loggedIn'); // Eliminar estado de sesión
+    document.querySelector('.main-container').style.display = 'none';
+    document.querySelector('.login-container').style.display = 'flex'; // Mostrar el login nuevamente
+}
+ // Verificar si el usuario ya está logueado al cargar la página
+ window.onload = function() {
+            if (localStorage.getItem('loggedIn') === 'true') {
                 document.querySelector('.login-container').style.display = 'none';
                 document.querySelector('.main-container').style.display = 'block';
                 startCarousel();
-            } else {
-                alert("ID o contraseña incorrectos.");
             }
-        }
+        };
 
         function showSection(section) {
             document.querySelectorAll('.content-container').forEach(el => el.style.display = 'none');
             document.getElementById(section).style.display = 'flex';
+        }
+        function toggleChapters(series) {
+            const chapters = document.getElementById(series + '-chapters');
+            chapters.style.display = chapters.style.display === 'none' ? 'block' : 'none';
         }
 
         function startCarousel() {

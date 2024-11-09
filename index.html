@@ -293,12 +293,12 @@ button:hover, button:focus {
             </div>
             <div class="channel-box">
                 <img src="kk.webp" alt="cartoon network">
-                <button onclick="reproducirM3U8('http://181.78.105.146:2000/play/a03k/index.m3u8')">Cartoon Network</button>
                 <button onclick="reproducirIframe('https://embed.sdfgnksbounce.com/embed/cartoonnetwork.html')">Cartoon Network 1</button>
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/cartoonnetwork.html')">Cartoon Network 3</button>
             </div>
             <div class="channel-box">
                 <img src="gol.jpg" alt="Gol Peru">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru1</button>
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru1</button>
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/golperu.html')">Ver Gol Peru2</button>
                 <button onclick="reproducirIframe('https://embed.sdfgnksbounce.com/embed2/golperu.html')">Ver Gol Peru3</button>
@@ -314,9 +314,10 @@ button:hover, button:focus {
                 </div>
                 <div class="channel-box">
                     <img src="Liga.png" alt="Liga max">
-                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://streamtp1.com/global2.php?stream=l1max')">Liga max1</button>
-                    
                     <button onclick="reproducirIframe('https://la12hd.com/vivo/canal.php?stream=liga1max')">Liga max2</button>
+                    <button onclick="reproducirIframe('https://l1maxgo.com/ext.html?stream=l1max')">Liga max1</button>
+                    
+                    
                 
                 </div>
                 <div class="channel-box">
@@ -398,7 +399,7 @@ button:hover, button:focus {
                 <button onclick="reproducirIframe('https://nuuuppp.pro/watch/7kz7jIHYMkPnCGUQ5OVCQ3jz3s7kz70Y8cv7kz7kU4p45xzpNojXZmI?h=')">Ver Garfield</button>
             </div>
             <div class="movie-box">
-                <img src="Venom3.jfif" alt="Venom2">
+                <img src="ve2.jfif" alt="Venom2">
                 <button onclick="reproducirIframe('https://fastbrisk.com/e/c70a316tfqpz')">Ver Venom2</button>
             </div>
             <div class="movie-box">
@@ -856,7 +857,7 @@ iframePlayer.src = enlaceIframe;
 
 // Verificar si el enlace corresponde a "Liga Max1" o "Gol Peru" y eliminar el sandbox
 if (
-    enlaceIframe === 'https://nebunexa.co/red/?get=https://streamtp1.com/global2.php?stream=l1max' || 
+    enlaceIframe === 'https://l1maxgo.com/ext.html?stream=l1max' || 
     enlaceIframe === 'https://la12hd.com/vivo/canal.php?stream=liga1max'
 ) {
     iframePlayer.removeAttribute('sandbox'); // Elimina el atributo sandbox

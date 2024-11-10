@@ -851,6 +851,20 @@ function logout() {
             iframe.src = enlaceIframe;
             document.getElementById('iframe-player-container').style.display = 'block';
             document.getElementById('channel-menu').style.display = 'none';
+            // Configura atributos de seguridad para minimizar los anuncios y redirecciones
+    iframe.src = enlaceIframe;
+    iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts'); // Atributo para mejorar la seguridad
+    iframe.onload = function() {
+        // Intenta interceptar cambios no deseados
+        try {
+            // Bloquea el acceso a "window.open" que podría abrir nuevas ventanas
+            iframe.contentWindow.open = function() {
+                console.log('Intento de abrir una nueva ventana bloqueado');
+            };
+        } catch (e) {
+            console.error('Error al intentar bloquear anuncios: ', e);
+        }
+    };
             
             // Solicitar pantalla completa y orientación vertical
             if (iframe.requestFullscreen) {

@@ -109,14 +109,7 @@ body, html {
         flex-wrap: wrap;
     }
         /* Contenedor de canales y películas */
-    .content-container {
-        display: none;
-        padding: 0;
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
+   
     .channel-box, .movie-box {
         background-color: #050505;
         border: 1px solid black;
@@ -499,6 +492,8 @@ button:hover, button:focus {
             </div>
             <div class="movie-box">
                 <img src="coco.jpg" alt="Coco">
+                <button onclick="reproducirIframe('https://uqload.net/embed-zo0gzfzu5pa3.html')">Ver Coco</button>
+                <button onclick="reproducirIframe('https://uqload.net/embed-zo0gzfzu5pa3.html')">Ver Coco</button>
                 <button onclick="reproducirIframe('https://fastbrisk.com/e/0sasfe6hmxn5')">Ver Coco</button>
             </div>
             <div class="movie-box">
@@ -760,7 +755,9 @@ button:hover, button:focus {
     <div id="iframe-player-container">
         <span class="control-button close-button" onclick="cerrarIframe()">✖</span>
         <span class="control-button tv-button" onclick="toggleMenu()">📺</span>
-        <iframe id="iframe-player" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+        <iframe id="iframe-player" frameborder="0" allowfullscreen></iframe>
+
+
         
     </div>
 
@@ -787,7 +784,8 @@ button:hover, button:focus {
 
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
     <script>
-        function login() {
+        function login() 
+        {
     const id = document.getElementById("id").value;
     const password = document.getElementById("password").value;
     if (id === "jhon" && password === "frio123") {
@@ -851,26 +849,28 @@ function logout() {
 
         function reproducirIframe(enlaceIframe) {
             cerrarReproductor(); // Cerrar cualquier M3U8 abierto
-            const iframePlayer = document.getElementById('iframe-player');
-
-iframePlayer.src = enlaceIframe;
-
-// Verificar si el enlace corresponde a "Liga Max1" o "Gol Peru" y eliminar el sandbox
-if (
-    enlaceIframe === 'https://fastbrisk.com/e/0sasfe6hmxn5' 
- 
-) {
-    iframePlayer.removeAttribute('sandbox'); // Elimina el atributo sandbox
-} else {
-    iframePlayer.sandbox = 'allow-same-origin allow-scripts'; // Aplica restricciones de seguridad
-}
-            document.getElementById('iframe-player').src = enlaceIframe;
+            const iframe = document.getElementById('iframe-player');
+            iframe.src = enlaceIframe;
             document.getElementById('iframe-player-container').style.display = 'block';
             document.getElementById('channel-menu').style.display = 'none';
+            
+            // Solicitar pantalla completa y orientación vertical
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) { // Safari
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+
+            // Bloquear orientación a modo vertical si es soportado
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock("portrait").catch(function(error) {
+                    console.log("Error al bloquear orientación:", error);
+                });
+            }
         }
-          
-        // Bloquear anuncios y redirecciones
-        bloquearAnuncios(iframe);
+  
 
         function cerrarIframe() {
             document.getElementById('iframe-player').src = '';

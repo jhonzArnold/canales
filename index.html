@@ -753,7 +753,8 @@ button:hover, button:focus {
     <div id="iframe-player-container">
         <span class="control-button close-button" onclick="cerrarIframe()">✖</span>
         <span class="control-button tv-button" onclick="toggleMenu()">📺</span>
-        <iframe id="iframe-player" frameborder="0" allowfullscreen referrerpolicy="no-referrer" rel="noopener"></iframe>
+        <iframe id="iframe-player" frameborder="0" allowfullscreen></iframe>
+
 
 
         
@@ -853,7 +854,7 @@ function logout() {
             document.getElementById('channel-menu').style.display = 'none';
             // Configura atributos de seguridad para minimizar los anuncios y redirecciones
     iframe.src = enlaceIframe;
-    iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts'); // Atributo para mejorar la seguridad
+    iframe.setAttribute('sandbo', 'allow-same-origin allow-scripts'); // Atributo para mejorar la seguridad
     iframe.onload = function() {
         // Intenta interceptar cambios no deseados
         try {
@@ -866,21 +867,7 @@ function logout() {
         }
     };
             
-            // Solicitar pantalla completa y orientación vertical
-            if (iframe.requestFullscreen) {
-                iframe.requestFullscreen();
-            } else if (iframe.webkitRequestFullscreen) { // Safari
-                iframe.webkitRequestFullscreen();
-            } else if (iframe.msRequestFullscreen) { // IE/Edge
-                iframe.msRequestFullscreen();
-            }
-
-            // Bloquear orientación a modo vertical si es soportado
-            if (screen.orientation && screen.orientation.lock) {
-                screen.orientation.lock("portrait").catch(function(error) {
-                    console.log("Error al bloquear orientación:", error);
-                });
-            }
+            
         }
   
 

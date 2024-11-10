@@ -492,6 +492,8 @@ button:hover, button:focus {
             </div>
             <div class="movie-box">
                 <img src="coco.jpg" alt="Coco">
+                <button onclick="reproducirIframe('https://nuuuppp.pro/wathcpremium/boIzhZQS1SAj8sUmqlmoqIS2eJ0osIe8DYhgZsdNt6I?h=')">Ver Coco</button>
+                <button onclick="reproducirIframe('https://playercito.xyz/embed.php?id=197')">Ver Coco</button>
                 <button onclick="reproducirIframe('https://fastbrisk.com/e/0sasfe6hmxn5')">Ver Coco</button>
             </div>
             <div class="movie-box">
@@ -753,8 +755,7 @@ button:hover, button:focus {
     <div id="iframe-player-container">
         <span class="control-button close-button" onclick="cerrarIframe()">✖</span>
         <span class="control-button tv-button" onclick="toggleMenu()">📺</span>
-        <iframe id="iframe-player" frameborder="0" allowfullscreen referrerpolicy="no-referrer" rel="noopener"></iframe>
-
+        <iframe id="iframe-player" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
 
         
     </div>
@@ -782,29 +783,6 @@ button:hover, button:focus {
 
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
     <script>
-        // Función para bloquear ventanas emergentes
-        function bloquearVentanasEmergentes() {
-            const originalOpen = window.open;
-            window.open = function() {
-                console.log('Intento de ventana emergente bloqueado');
-                return null; // Bloquea el intento
-            };
-
-            const originalAssign = window.location.assign;
-            window.location.assign = function(url) {
-                console.log(`Intento de redirección bloqueado: ${url}`);
-            };
-        }
-
-        // Inicia al cargar la página
-        window.onload = function() {
-            bloquearVentanasEmergentes();
-            if (localStorage.getItem('loggedIn') === 'true') {
-                document.querySelector('.login-container').style.display = 'none';
-                document.querySelector('.main-container').style.display = 'block';
-                startCarousel();
-            }
-        };
         function login() 
         {
     const id = document.getElementById("id").value;
@@ -875,10 +853,25 @@ function logout() {
             document.getElementById('iframe-player-container').style.display = 'block';
             document.getElementById('channel-menu').style.display = 'none';
             
-            
-            
+            // Solicitar pantalla completa y orientación vertical
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) { // Safari
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+
+            // Bloquear orientación a modo vertical si es soportado
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock("portrait").catch(function(error) {
+                    console.log("Error al bloquear orientación:", error);
+                });
+            }
         }
   
+        // Bloquear anuncios y redirecciones
+        bloquearAnuncios(iframe);
 
         function cerrarIframe() {
             document.getElementById('iframe-player').src = '';

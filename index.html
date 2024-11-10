@@ -753,8 +753,7 @@ button:hover, button:focus {
     <div id="iframe-player-container">
         <span class="control-button close-button" onclick="cerrarIframe()">✖</span>
         <span class="control-button tv-button" onclick="toggleMenu()">📺</span>
-        <iframe id="iframe-player" frameborder="0" allowfullscreen></iframe>
-
+        <iframe id="iframe-player" frameborder="0" allowfullscreen referrerpolicy="no-referrer" rel="noopener"></iframe>
 
 
         
@@ -783,6 +782,34 @@ button:hover, button:focus {
 
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
     <script>
+        // Función para bloquear ventanas emergentes y redirecciones
+function bloquearVentanasEmergentes() {
+    // Intercepta intentos de abrir ventanas usando window.open
+    window.open = function() {
+        console.log('Intento de abrir una ventana emergente bloqueado');
+    };
+
+    // Intercepta intentos de cambiar la ubicación de la página
+    window.onbeforeunload = function() {
+        return 'Estás a punto de salir de la página. ¿Seguro que quieres hacerlo?';
+    };
+
+    // Intercepta redirecciones realizadas a través de location.assign
+    const originalAssign = window.location.assign;
+    window.location.assign = function(url) {
+        console.log(`Intento de redirección bloqueado: ${url}`);
+    };
+}
+
+// Llama a la función de bloqueo al cargar la página
+window.onload = function() {
+    bloquearVentanasEmergentes();
+    if (localStorage.getItem('loggedIn') === 'true') {
+        document.querySelector('.login-container').style.display = 'none';
+        document.querySelector('.main-container').style.display = 'block';
+        startCarousel();
+    }
+};
         function login() 
         {
     const id = document.getElementById("id").value;

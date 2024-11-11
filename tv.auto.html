@@ -109,14 +109,7 @@ body, html {
         flex-wrap: wrap;
     }
         /* Contenedor de canales y películas */
-    .content-container {
-        display: none;
-        padding: 0;
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
+   
     .channel-box, .movie-box {
         background-color: #050505;
         border: 1px solid black;
@@ -288,35 +281,46 @@ button:hover, button:focus {
                 <button onclick="reproducirM3U8('https://cdnhd.iblups.com/hls/777b4d4cc0984575a7d14f6ee57dbcaf.m3u8')">Ver Tv Peru</button>
             </div>
             <div class="channel-box">
-                <img src="sony.png" alt="Sony">
-                <button onclick="reproducirM3U8('https://cdn.klowdtv.net/803B48A/n1.klowdtv.net/live1/cine_720p/playlist.m3u8')">Ver Sony</button>
-            </div>
-            <div class="channel-box">
                 <img src="cosmo.png" alt="cosmo">
-                <button onclick="reproducirM3U8('https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8')">Ver Sony</button>
+                <button onclick="reproducirM3U8('https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8')">Ver Cosmo</button>
             </div>
             <div class="channel-box">
                 <img src="kk.webp" alt="cartoon network">
                 <button onclick="reproducirIframe('https://embed.sdfgnksbounce.com/embed/cartoonnetwork.html')">Cartoon Network 1</button>
-                <button onclick="reproducirM3U8('http://181.78.105.146:2000/play/a03k/index.m3u8')">Cartoon Network 2</button>
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/cartoonnetwork.html')">Cartoon Network 3</button>
             </div>
             <div class="channel-box">
                 <img src="gol.jpg" alt="Gol Peru">
-                <button onclick="reproducirM3U8('https://server.betzta.com/lb/golperu/index.m3u8?token=29c51188b2833e882b43400a19523c7d3c53ec09-aed7a084501b2286ca4594aa0063a17f-1730658382-1730647582&remote=38.')">Ver Gol Peru1</button>
-                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru2</button>
-                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/golperu.html')">Ver Gol Peru3</button>
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru1</button>
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru1</button>
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/golperu.html')">Ver Gol Peru2</button>
+                <button onclick="reproducirIframe('https://embed.sdfgnksbounce.com/embed2/golperu.html')">Ver Gol Peru3</button>
+                <button onclick="reproducirIframe('https://embed.sdfgnksbounce.com/embed/golperu.html')">Ver Gol Peru4</button>
+                
                 </div>
                 <div class="channel-box">
-                    <img src="qq.png" alt="Direct Sport">
+                    <img src="Direct Sport.png" alt="Direct Sport">
                     <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports.html')">Direct Sport</button>
+                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/directvsports.html')">Direct Sport</button>
+                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/directvsports2.html')">Direct Sport</button>
+                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://micanaldeportivo.com/directvsports.php')">Direct Sport</button>
                 </div>
                 <div class="channel-box">
-                    <img src="qq.png" alt="Liga max">
-                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://streamtp1.com/global2.php?stream=l1max')">Liga max1</button>
-                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://tucanaldeportivo.org/liga1maxpe.php')">Liga max2</button>
+                    <img src="Liga.png" alt="Liga max">
+                    <button onclick="reproducirIframe('https://la12hd.com/vivo/canal.php?stream=liga1max')">Liga max2</button>
+                    <button onclick="reproducirIframe('https://l1maxgo.com/ext.html?stream=l1max')">Liga max1</button>
                     
-
+                    
+                
+                </div>
+                <div class="channel-box">
+                    <img src="espn4.png" alt="Espn4">
+                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/espn4.html')">Espn4</button>
+                    <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/espn4.html')">Espn4</button>
+                </div>
+                <div class="channel-box">
+                    <img src="real.jfif" alt="Canal Real Madrid">
+                    <button onclick="reproducirM3U8('https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8')">Canal Real Madrid</button>
                 </div>
             <div class="channel-box">
                 <img src="qq.png" alt="National Geographic">
@@ -324,20 +328,58 @@ button:hover, button:focus {
             </div>
             <div class="channel-box">
                 <img src="se.png" alt="TNT Series">
-                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">Ver canal</button>
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tntseries.html')">Ver Tnt Serie</button>
+            </div>
+            <div class="channel-box">
+                <img src="tnt.png" alt="Tnt Sport">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/tnt.html')">Ver Tnt Sport</button>
             </div>
             <div class="channel-box">
                 <img src="tet.png" alt="Telemundo">
-                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Ver canal</button>
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/telemundopuertorico.html')">Ver Telemundo</button>
             </div>
             <div class="channel-box">
                 <img src="caa.png" alt="Cartoonito">
-                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonito.html')">Ver canal</button>
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/cartoonito.html')">Ver Cartoonito</button>
             </div>
             <div class="channel-box">
                 <img src="ju.jfif" alt="Disney Junior">
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneyjr.html')">Ver Disney Junior</button>
             </div>
+            <div class="channel-box">
+                <img src="disnet.png" alt="Disney Chanel">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/disneychannel.html')">Ver Disney Chanel</button>
+            </div>
+            <div class="channel-box">
+                <img src="ees.png" alt="Star Chanel">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/starchannel.html')">Ver Star Chanel</button>
+            </div>
+            <div class="channel-box">
+                <img src="anima.jfif" alt="anime planet">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/animalplanet.html')">Ver anime planet</button>
+            </div>
+            <div class="channel-box">
+                <img src="histori.jfif" alt="History Chanel">
+                <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed2/history.html')">Ver History Chanel</button>
+            </div>
+            <div class="channel-box">
+                <img src="genios.png" alt="Genios Tv">
+                <button onclick="reproducirM3U8('https://live.obslivestream.com/geniostvmux/index.m3u8')">Ver Genios Tv</button>
+            </div>
+            
+            <div class="channel-box">
+                <img src="planeta.jfif" alt="Ver Planeta Tv">
+                <button onclick="reproducirM3U8('https://live.obslivestream.com/planetatv/index.m3u8')">Ver Planeta Tv</button>
+            </div>
+            <div class="channel-box">
+                <img src="tvw.jfif" alt="Ver tvw">
+                <button onclick="reproducirM3U8('https://cdn.elsalvadordigital.com:1936/wowtv/smil:wowtv.smil/chunklist_w668344429_b700000_slen.m3u8')">Ver tvw</button>
+            </div>
+            <div class="channel-box">
+                <img src="neo.jfif" alt="Ver neo Tv">
+                <button onclick="reproducirM3U8('https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8')">Ver neo Tv</button>
+            </div>
+            
 
 
         </div>
@@ -350,12 +392,23 @@ button:hover, button:focus {
                 <button onclick="reproducirIframe('https://nuuuppp.pro/watch/7kz7jIHYMkPnCGUQ5OVCQ3jz3s7kz70Y8cv7kz7kU4p45xzpNojXZmI?h=')">Ver Garfield</button>
             </div>
             <div class="movie-box">
+                <img src="ve2.jfif" alt="Venom2">
+                <button onclick="reproducirIframe('https://dood.li/e/aiy8dpouit3r')">Ver Venom2</button>
+                <button onclick="reproducirIframe('https://uqload.net/embed-ob5wdepjw1d0.html')">Ver Venom2</button>
+                
+            </div>
+            <div class="movie-box">
                 <img src="Venom3.jfif" alt="Venom3">
+                <button onclick="reproducirIframe('https://dood.li/e/gofq7qjwjqxu')">Ver Venom3</button>
                 <button onclick="reproducirIframe('https://vidhidefast.com/v/lxni6eh6v7ds')">Ver Venom3</button>
+                <button onclick="reproducirIframe('https://jamessoundcost.com/e/flwwk57y8ahu')">Ver Venom3</button>
+                <button onclick="reproducirIframe('https://file-zz40pd56-embed.com/ptsd/72myg6wew02b?referer=www18.pelisplushd.to')">Ver Venom3</button>
             </div>
             <div class="movie-box">
                 <img src="robot.jfif" alt="Robot salvaje">
-                <button onclick="reproducirIframe('https://hlswish.com/e/fprszlndo9n1')">Ver Robot salvaje 1</button>
+                <button onclick="reproducirIframe('https://vidhidefast.com/v/rqjionqknsdi')">Ver Robot salvaje 1</button>
+                <button onclick="reproducirIframe('https://dood.li/e/zugk0sl1nmsq')">Ver Robot salvaje 1</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/wathcpremium/6fVeH9e1DDaSAJfCoOccOY7kz7jh2ojRoDxoTWfvNOSPPI?h=')">Ver Robot salvaje 1</button>
                 <button onclick="reproducirIframe('https://nuuuppp.pro/watch/6fVeH9e1DDaSAJfCoOccOY7kz7jh2ojRoDxoTWfvNOSPPI?h=')">Ver Robot salvaje1.1</button>
             </div>
             <div class="movie-box">
@@ -369,7 +422,10 @@ button:hover, button:focus {
             </div>
             <div class="movie-box">
                 <img src="La Sustancia.jfif" alt="La Sustancia">
-                <button onclick="reproducirIframe('https://hlswish.com/e/t82ki8yd6pyb')">Ver La Sustancia</button>
+                <button onclick="reproducirIframe('https://vidhidefast.com/v/hvz71jnjbfip')">Ver La Sustancia</button>
+                <button onclick="reproducirIframe('https://dood.li/e/pv7kctqc80mx')">Ver La Sustancia</button>
+
+                <button onclick="reproducirIframe('https://nuuuppp.pro/wathcpremium/ULz5nE8TiUeJ7kz7Kxw0Yj0sBC8gxGe3jz3K3jz38IuQv6fYpAxk?h=')">Ver La Sustancia</button>
             </div>
             <div class="movie-box">
                 <img src="al.jpeg" alt="Alien: Romulus">
@@ -433,41 +489,268 @@ button:hover, button:focus {
             </div>
             <div class="movie-box">
                 <img src="La decisión mas dificil.jfif" alt="La decisión mas dificil">
-                <button onclick="reproducirIframe('https://file-zz40pd56-embed.com/ptsd/st0ch68w0nyv')">Ver La decisión mas dificil</button>
                 <button onclick="reproducirIframe('https://fastbrisk.com/e/gy6xpz0nkrj0')">Ver La decisión mas dificil</button>
             </div>
             <div class="movie-box">
                 <img src="el astronauta.jpg" alt="El astronauta">
-                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/vK3M7XPZkRrBvhtSTpAU1I7kz79BJbmQX8j3jz3xy3jz3bjlnxIs?h=')">Ver El astronauta</button>
+                <button onclick="reproducirIframe('https://playerwish.com/e/z0ngh0mg4n3j')">Ver El astronauta</button>
             </div>
             <div class="movie-box">
                 <img src="atlas.jpg" alt="Atlas">
-                <button onclick="reproducirIframe('https://dood.li/e/9v7cb6m7o6f9')">Ver Atlas</button>
-                <button onclick="reproducirIframe('https://file-zz40pd56-embed.com/ptsd/d256qxr4b2ua')">Ver Atlas</button>
+                <button onclick="reproducirIframe('https://swhoi.com/e/8mqms988knjk')">Ver Atlas</button>
             </div>
             <div class="movie-box">
                 <img src="coco.jpg" alt="Coco">
-                <button onclick="reproducirIframe('https://playerwish.com/e/pqgbmvu156j7')">Ver Coco</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/wathcpremium/boIzhZQS1SAj8sUmqlmoqIS2eJ0osIe8DYhgZsdNt6I?h=')">Ver Coco</button>
+                
             </div>
             <div class="movie-box">
                 <img src="hasta el ultimo hombre.jfif" alt="Hasta el ultimo hombre">
-                <button onclick="reproducirIframe('https://dood.li/d/11mp78vohzdb')">Ver Hasta el ultimo hombre</button>
-                <button onclick="reproducirIframe('https://file-zz40pd56-embed.com/ptsd/t06wrd0bi0sk')">Ver Hasta el ultimo hombre</button>
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/zoukm4p5vorz')">Ver Hasta el ultimo hombre</button>
             </div>
+            <div class="movie-box">
+                <img src="lado1.jfif" alt="Siempre a tu lado 1">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/2yi0z3hae03t')">Ver Siempre a tu lado 1</button>
+            </div>
+            <div class="movie-box">
+                <img src="lado2.jfif" alt="Siempre a tu lado 2">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/xbphaz1tcdq3')">Ver Siempre a tu lado 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="Barbie.jfif" alt="Barbi">
+                <button onclick="reproducirIframe('https://wishfast.top/e/xloapluq02wh')">Ver Barbi</button>
+            </div>
+            <div class="movie-box">
+                <img src="win.jpg" alt="Winnie De Pooh: Miel Y Sangre 2">
+                <button onclick="reproducirIframe('https://hlswish.com/e/39xlw5shwsf7')">Ver Winnie De Pooh: Miel Y Sangre 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="wii.jpg" alt="Winnie De Pooh: Miel Y Sangre 1">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/az4uceaepvgh')">Ver Winnie De Pooh: Miel Y Sangre 1</button>
+            </div>
+            <div class="movie-box">
+                <img src="sound.jfif" alt="Sound Of Freedom">
+                <button onclick="reproducirIframe('https://wishfast.top/e/xz115shhcp03')">Ver Sound Of Freedom</button>
+            </div>
+            <div class="movie-box">
+                <img src="dea.jpg" alt="deadl pol y wolvenrin">
+                <button onclick="reproducirIframe('https://playerwish.com/e/akzfn5wu8e5d')">Ver deadl pol y wolvenrin</button>
+            </div>
+            <div class="movie-box">
+                <img src="god.jpeg" alt="godzila y kin kon">
+                <button onclick="reproducirIframe('https://swhoi.com/e/t335ff60roan')">Ver godzila y kin kon</button>
+            </div>
+            <div class="movie-box">
+                <img src="blac.jfif" alt="blak adan">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/xrbmd298q3wk')">Ver blak adan</button>
+            </div>
+            <div class="movie-box">
+                <img src="bros.jfif" alt="mario bros">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/sar55ga3mtu5')">Ver mario bros</button>
+            </div>
+            <div class="movie-box">
+                <img src="me2.jfif" alt="megalodon 2">
+                <button onclick="reproducirIframe('https://embedwish.com/e/ia4e0wz7vxs2')">Ver megalodon 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="me1.jfif" alt="megalodon 1">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/u9bpq5mk312d')">Ver megalodon 1</button>
+            </div>
+            <div class="movie-box">
+                <img src="trasforme.jfif" alt="trasformer el despertar">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/b0cshknwtyi0')">Ver trasformer el despertar</button>
+            </div>
+            <div class="movie-box">
+                <img src="Oppenheimer.jfif" alt="Oppenheimer">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/j2hwb82ugot8')">Ver Oppenheimer</button>
+            </div>
+            <div class="movie-box">
+                <img src="mi22.jfif" alt="mision rescate 2">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/rfxbjk5k6zei')">Ver mision rescate 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="mi1.jfif" alt="mision rescate 1">
+                <button onclick="reproducirIframe('https://d0000d.com/e/ppmdlmwnzkt9')">Ver mision rescate 1</button>
+            </div>
+            <div class="movie-box">
+                <img src="yo.jfif" alt="jhon wik 4">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/k4679su2njdk')">Ver jhon wik 4</button>
+            </div>
+            <div class="movie-box">
+                <img src="cho.jpg" alt="Chabuca">
+                <button onclick="reproducirIframe('https://cdnplaypro.com/e/ap4r4jtogkl3')">ver Chabuca</button>
+            </div>
+            <div class="movie-box">
+                <img src="bad.jpg" alt="Bad Boys: Hasta la muerte 2">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/c5l9l9zz0gqo')">ver Bad Boys: Hasta la muerte 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="bad boy1.jfif" alt="Bad Boys: Hasta la muerte 1">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/i18zya070bln')">ver Bad Boys: Hasta la muerte 1</button>
+            </div>
+            <div class="movie-box">
+                <img src="beat.jfif" alt="Beetlejuice 2">
+                <button onclick="reproducirIframe('https://hlswish.com/e/b1b5bzeg5sp9')">ver Beetlejuice 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="The Flash.jfif" alt="The Flash">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/5ytjyrwbhm08')">ver The Flash</button>
+            </div>
+            <div class="movie-box">
+                <img src="endgame.jfif" alt="Avengers: Endgame">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/pbzadhot777m')">ver Avengers: Endgame</button>
+            </div>
+            <div class="movie-box">
+                <img src="infiniti.jfif" alt="Avengers: Infinity War">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/zobkkb8wwnx1')">ver Avengers: Infinity War</button>
+            </div>
+            <div class="movie-box">
+                <img src="cap3.jfif" alt="Capitán América 3: Civil War ">
+                <button onclick="reproducirIframe('https://playerwish.com/e/iijxrq5urm1i')">ver Capitán América 3: Civil War </button>
+            </div>
+            <div class="movie-box">
+                <img src="cap2.jfif" alt="Capitán América 2 ">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/glw0l58k1mut')">ver Capitán América 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="cap1.jfif" alt="Capitán América 1 ">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/f7yqjvvzynqi')">ver Capitán América 1 </button>
+            </div>
+
+
+
         </div>
     </div>
     <!-- Series -->
     <div class="content-container" id="Series">
         <div class="movie-box">
-            <img src="pelicula1.jpg" alt="am">
-            <button onclick="toggleChapters('am')">Ver am</button>
-            <div id="am-chapters" style="display:none;">
-                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am1')">Ver am 1</button>
-                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am2')">Ver am 2</button>
-                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am3')">Ver am 3</button>
+            <img src="simp.jfif" alt="Los simpson">
+            <button onclick="toggleChapters('Los simpson')">Ver Los simpson</button>
+            <div id="Los simpson-chapters" style="display:none;">
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am1')">Ver Capitulos 1</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am2')">Ver Capitulos 2</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am3')">Ver Capitulos 3</button>
             </div>
         </div>
+            <div class="movie-box">
+                <img src="simp_terror.jpg" alt="Los simpson La casita de Terror">
+                <button onclick="toggleChapters('Los simpson La casita de Terror')">Ver Los simpson La casita de Terror</button>
+                <div id="Los simpson La casita de Terror-chapters" style="display:none;">
+                    <button onclick="reproducirIframe('https://fastbrisk.com/e/cenp3xlom1zk')">Ver La casita del horror  XXXIII</button>
+                    <button onclick="reproducirIframe('https://fastbrisk.com/e/aabdy00nzs0x')">Ver La casita del horror XXXII</button>
+                    <button onclick="reproducirIframe('https://fastbrisk.com/e/n7pqao9bo0o9')">Ver La casita del horror XXXI</button>
+                    
+                    
+                </div>
+            </div>
+                <div class="movie-box">
+                    <img src="chucky.jfif" alt="Chucky">
+                    <button onclick="toggleChapters('Chucky')">Ver Chucky</button>
+                    <div id="Chucky-chapters" style="display:none;">
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/kmb2lyui0n2e')">Ver Capitulo 1</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/r1qj5qrjjk07')">Ver Capitulo 2</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/yppx561wg4qs')">Ver Capitulo 3</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/r81uw45w4ocf')">Ver Capitulo 4</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/q6gy6pbqfa2r')">Ver Capitulo 5</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/6jbzp7k6q9sk')">Ver Capitulo 6</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/o31garj77aw6')">Ver Capitulo 7</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/dv1linvzpa5m')">Ver Capitulo 8</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/z864svg83q65')">Ver Capitulo 9</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/v5jucsy4c3sm')">Ver Capitulo 10</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/90kv9yh6i8d2')">Ver Capitulo 11</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/h723hy9nky7g')">Ver Capitulo 12</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/2w6p4rmjxupi')">Ver Capitulo 13</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/s0enbhy6z0vp')">Ver Capitulo 14</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/zonl6ldlcvr2')">Ver Capitulo 15</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/ojncwz9oq6dh')">Ver Capitulo 16</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/j70wcdm3hw1r')">Ver Capitulo 17</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/54cdhfctep75')">Ver Capitulo 18</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/yd4zwdhqmlll')">Ver Capitulo 19</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/kp8rtygwgbut')">Ver Capitulo 20</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/ilaou0exk605')">Ver Capitulo 21</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/9dh1gkkbd6ul')">Ver Capitulo 22</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/l0gi0q0q5eyf')">Ver Capitulo 23</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/tbxe816kh43l')">Ver Capitulo 24</button>
+                    </div>
+                </div>
+                <div class="movie-box">
+                    <img src="Belleza verdadera.jfif" alt="Belleza verdadera">
+                    <button onclick="toggleChapters('Belleza verdadera')">Ver Belleza verdadera</button>
+                    <div id="Belleza verdadera-chapters" style="display:none;">
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/cc4woz68hqy3')">Ver Capitulo 1</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/vrsh96hkzb83')">Ver Capitulo 2</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/yoojfl26pg1h')">Ver Capitulo 3</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/qgccrwtmrt87')">Ver Capitulo 4</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/i97yevj4ugk7')">Ver Capitulo 5</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/orehcfdlu8ru')">Ver Capitulo 6</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/2ircx5xji9ml')">Ver Capitulo 7</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/ghxb83dhceur')">Ver Capitulo 8</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/hsq1emzxgsru')">Ver Capitulo 9</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/piht5yxsihdg')">Ver Capitulo 10</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/7isifnzdp5st')">Ver Capitulo 11</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/8cnk6245kbri')">Ver Capitulo 12</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/vd598ggrjwzb')">Ver Capitulo 13</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/n15nzbdy5420')">Ver Capitulo 14</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/95zckrr7u77t')">Ver Capitulo 15</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/0cf96t823xv2')">Ver Capitulo 16</button>
+        </div>
+        
     </div>
+    <div class="movie-box">
+        <img src="Dragon Ball Daima.jfif" alt="Dragon Ball Daima">
+        <button onclick="toggleChapters('Dragon Ball Daima')">Ver Dragon Ball Daima</button>
+        <div id="Dragon Ball Daima-chapters" style="display:none;">
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/24yfjb2c6gqi')">Ver Capitulo 1</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/bp0z3j5n4byv')">Ver Capitulo 2</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/laxbpnf8tkv1')">Ver Capitulo 3</button> 
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/6xdhlkrgsjyo')">Ver Capitulo 4</button> 
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/yev02lmmzszz')">Ver Capitulo 5</button> 
+            <button onclick="reproducirIframe('https://uqload.net/embed-foyrfysh3aif.html')">Ver Capitulo 5</button> 
+        </div>
+    </div>
+    <div class="movie-box">
+        <img src="bety.jfif" alt="Betty la fea, la historia continúa">
+        <button onclick="toggleChapters('Betty la fea, la historia continúa')">Ver Betty la fea, la historia continúa</button>
+        <div id="Betty la fea, la historia continúa-chapters" style="display:none;">
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/6ceksl2zh2pq')">Ver Capitulo 1</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/w7nark5xtbf2')">Ver Capitulo 2</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/ctqsq6q78zs3')">Ver Capitulo 3</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/agnkrmdvho9u')">Ver Capitulo 4</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/a37u5uiq3t4g')">Ver Capitulo 5</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/rbricgrzuxdm')">Ver Capitulo 6</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/r4bbdr2l447f')">Ver Capitulo 7</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/4mzcavu5kfpr')">Ver Capitulo 8</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/pnhehn9pztmz')">Ver Capitulo 9</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/wo3hrdhy32zy')">Ver Capitulo 10</button>
+        </div>
+    </div>
+    <div class="movie-box">
+        <img src="what if.jfif" alt="What if">
+        <button onclick="toggleChapters('What if')">Ver What if</button>
+        <div id="What if-chapters" style="display:none;">
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/dzwc5zjmy6sb')">Ver Capitulo 1</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/dkbr1i65o0pf')">Ver Capitulo 2</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/94tvlzxi6jc8')">Ver Capitulo 3</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/lsyl091gkh0i')">Ver Capitulo 4</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/2da0qgx0ojij')">Ver Capitulo 5</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/du91786axaq1')">Ver Capitulo 6</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/912qv85fj1y8')">Ver Capitulo 7</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/lnskpafew03v')">Ver Capitulo 8</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/0gcl91abt0nq')">Ver Capitulo 9</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/viylhxbvzsr2')">Ver Capitulo 10</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/bqdl5djpcue8')">Ver Capitulo 11</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/5la5mz3wyy9y')">Ver Capitulo 12</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/6m3fomp2h6s7')">Ver Capitulo 13</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/bytd6ydpd1a3')">Ver Capitulo 14</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/5apd29oexw5z')">Ver Capitulo 15</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/bhf11dedhgam')">Ver Capitulo 16</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/jrzawa6qzcid')">Ver Capitulo 17</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/5zbsav9lbt8o')">Ver Capitulo 18</button>
+        </div>
+    </div>
+
+    
+</div>
 
     <!-- Reproductor M3U8 -->
     <div id="video-player-container">
@@ -481,6 +764,7 @@ button:hover, button:focus {
         <span class="control-button close-button" onclick="cerrarIframe()">✖</span>
         <span class="control-button tv-button" onclick="toggleMenu()">📺</span>
         <iframe id="iframe-player" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
         
     </div>
 
@@ -500,14 +784,15 @@ button:hover, button:focus {
         <button onclick="reproducirM3U8('https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8')">cosmo</button>
        
         <button onclick="reproducirIframe('https://embed.sdfgnksbounce.com/embed/cartoonnetwork.html')">Cartoon Network 1</button>
-                <button onclick="reproducirM3U8('http://181.78.105.146:2000/play/a03k/index.m3u8')">Cartoon Network 2</button>
+                <button onclick="reproducirM3U8('http://181.78.105.146:2000/play/a03k/index.m3u8')">Cartoon Network </button>
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/cartoonnetwork.html')">Cartoon Network 3</button>
         <button onclick="reproducirIframe('https://embed.sdfgnksbounce.com/embed2/golperu.html')">Gol Peru</button>
     </div>
 
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
     <script>
-        function login() {
+        function login() 
+        {
     const id = document.getElementById("id").value;
     const password = document.getElementById("password").value;
     if (id === "jhon" && password === "frio123") {
@@ -571,11 +856,28 @@ function logout() {
 
         function reproducirIframe(enlaceIframe) {
             cerrarReproductor(); // Cerrar cualquier M3U8 abierto
-            document.getElementById('iframe-player').src = enlaceIframe;
+            const iframe = document.getElementById('iframe-player');
+            iframe.src = enlaceIframe;
             document.getElementById('iframe-player-container').style.display = 'block';
             document.getElementById('channel-menu').style.display = 'none';
+            
+            // Solicitar pantalla completa y orientación vertical
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) { // Safari
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+
+            // Bloquear orientación a modo vertical si es soportado
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock("portrait").catch(function(error) {
+                    console.log("Error al bloquear orientación:", error);
+                });
+            }
         }
-          
+  
         // Bloquear anuncios y redirecciones
         bloquearAnuncios(iframe);
 
@@ -592,4 +894,4 @@ function logout() {
     </script>
 
 </body>
-</html> 
+</html>

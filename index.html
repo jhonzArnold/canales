@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -215,7 +215,41 @@ button:hover, button:focus {
         .logout-button {
             background-color: red; /* Color rojo para el botón de cerrar sesión */
         }
-        
+       
+        #videoContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semitransparente */
+    z-index: 1000;
+}
+
+#videoFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.close-icon:hover {
+    color: red; /* Cambia el color al pasar el cursor */
+    transform: scale(1.2); /* Agranda ligeramente el ícono */
+}
+
+
     </style>
 </head>
 <body>
@@ -238,7 +272,7 @@ button:hover, button:focus {
                 <button onclick="showSection('inicio')">Inicio</button>
                 <button onclick="showSection('canales')">Canales</button>
                 <button onclick="showSection('peliculas')">Películas</button>
-               
+                <button onclick="showSection('Series')">Series</button>
                 <button class="logout-button" onclick="logout()">Cerrar Sesión</button> <!-- Botón de cerrar sesión -->
             </div>
         </div>
@@ -385,7 +419,178 @@ button:hover, button:focus {
         </div>
         </div>
 
+        <!-- Películas -->
+        <div class="content-container" id="peliculas">
+            <div class="movie-box">
+                <img src="robot.jfif" alt="Robot salvaje">
+                <button onclick="playVideo('https://drive.google.com/file/d/1YHPjhTwgUgVUwlVMobRq_ibBvfvQ21EZ/preview')">Ver Robot salvaje HD</button>
+            </div>
+            <div class="movie-box">
+                <img src="al.jpeg" alt="Alien: Romulus">
+                <button onclick="playVideo('https://drive.google.com/file/d/1xaBLnuQ6BY4LFYFwomxI3qqxxOndBWMu/preview')">Ver Alien: Romulus HD</button>
+            </div>
+            <div class="movie-box">
+                <img src="dea.jpg" alt="deadl pol y wolvenrin">
+                <button onclick="playVideo('https://drive.google.com/file/d/13bK59tDEbHv2nKrNDFZ8a0_ZPp8jMcei/preview')">Ver deadl pol y wolvenrin HD</button>
+            </div>
+            <div class="movie-box">
+                <img src="mi villano.jfif" alt="mi villano favorito4">
+                <button onclick="playVideo('https://drive.google.com/file/d/1e0QvLNCNzc7O1jH7kpgF8PtZ4zvyIhfl/preview')">Ver mi villano favorito4 HD</button>
+            </div>
+            <div class="movie-box">
+                <img src="jocker2.png" alt="Jocker2">
+                <button onclick="playVideo('https://drive.google.com/file/d/16d5sT9Hfrw_b2--DTCJmmQpfVFoyaTbN/preview')">Ver Jocker2 HD</button>
+            </div>
+            <div class="movie-box">
+                <img src="La Sustancia.jfif" alt="La Sustancia">
+                <button onclick="playVideo('https://drive.google.com/file/d/1JslcvRN0o3ml_ZJKakCWSFNhef9wSYD9/preview')">Ver La Sustancia HD</button>
+            </div>
+            <div class="movie-box">
+                <img src="terr.jpg" alt="Terrifer3">
+                <button onclick="playVideo('https://drive.google.com/file/d/1C4K4NcFk-B8nJBKijDrz2UWmU4FO1VF-/preview')">Ver Terrifer3(aun d cine)</button>
+            </div>
+            <div class="movie-box">
+                <img src="coco.jpg" alt="Coco">
+                <button onclick="playVideo('https://nuuuppp.pro/wathcpremium/boIzhZQS1SAj8sUmqlmoqIS2eJ0osIe8DYhgZsdNt6I?h=')">Ver Coco HD</button>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    <!-- Series -->
+    <div class="content-container" id="Series">
+        <div class="movie-box">
+            <img src="simp.jfif" alt="Los simpson">
+            <button onclick="toggleChapters('Los simpson')">Ver Los simpson</button>
+            <div id="Los simpson-chapters" style="display:none;">
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am1')">Ver Capitulos 1</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am2')">Ver Capitulos 2</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am3')">Ver Capitulos 3</button>
+            </div>
+        </div>
+            <div class="movie-box">
+                <img src="simp_terror.jpg" alt="Los simpson La casita de Terror">
+                <button onclick="toggleChapters('Los simpson La casita de Terror')">Ver Los simpson La casita de Terror</button>
+                <div id="Los simpson La casita de Terror-chapters" style="display:none;">
+                    <button onclick="reproducirIframe('https://fastbrisk.com/e/cenp3xlom1zk')">Ver La casita del horror  XXXIII</button>
+                    <button onclick="reproducirIframe('https://fastbrisk.com/e/aabdy00nzs0x')">Ver La casita del horror XXXII</button>
+                    <button onclick="reproducirIframe('https://fastbrisk.com/e/n7pqao9bo0o9')">Ver La casita del horror XXXI</button>
+                    
+                    
+                </div>
+            </div>
+                <div class="movie-box">
+                    <img src="chucky.jfif" alt="Chucky">
+                    <button onclick="toggleChapters('Chucky')">Ver Chucky</button>
+                    <div id="Chucky-chapters" style="display:none;">
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/kmb2lyui0n2e')">Ver Capitulo 1</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/r1qj5qrjjk07')">Ver Capitulo 2</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/yppx561wg4qs')">Ver Capitulo 3</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/r81uw45w4ocf')">Ver Capitulo 4</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/q6gy6pbqfa2r')">Ver Capitulo 5</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/6jbzp7k6q9sk')">Ver Capitulo 6</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/o31garj77aw6')">Ver Capitulo 7</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/dv1linvzpa5m')">Ver Capitulo 8</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/z864svg83q65')">Ver Capitulo 9</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/v5jucsy4c3sm')">Ver Capitulo 10</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/90kv9yh6i8d2')">Ver Capitulo 11</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/h723hy9nky7g')">Ver Capitulo 12</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/2w6p4rmjxupi')">Ver Capitulo 13</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/s0enbhy6z0vp')">Ver Capitulo 14</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/zonl6ldlcvr2')">Ver Capitulo 15</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/ojncwz9oq6dh')">Ver Capitulo 16</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/j70wcdm3hw1r')">Ver Capitulo 17</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/54cdhfctep75')">Ver Capitulo 18</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/yd4zwdhqmlll')">Ver Capitulo 19</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/kp8rtygwgbut')">Ver Capitulo 20</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/ilaou0exk605')">Ver Capitulo 21</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/9dh1gkkbd6ul')">Ver Capitulo 22</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/l0gi0q0q5eyf')">Ver Capitulo 23</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/tbxe816kh43l')">Ver Capitulo 24</button>
+                    </div>
+                </div>
+                <div class="movie-box">
+                    <img src="Belleza verdadera.jfif" alt="Belleza verdadera">
+                    <button onclick="toggleChapters('Belleza verdadera')">Ver Belleza verdadera</button>
+                    <div id="Belleza verdadera-chapters" style="display:none;">
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/cc4woz68hqy3')">Ver Capitulo 1</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/vrsh96hkzb83')">Ver Capitulo 2</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/yoojfl26pg1h')">Ver Capitulo 3</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/qgccrwtmrt87')">Ver Capitulo 4</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/i97yevj4ugk7')">Ver Capitulo 5</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/orehcfdlu8ru')">Ver Capitulo 6</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/2ircx5xji9ml')">Ver Capitulo 7</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/ghxb83dhceur')">Ver Capitulo 8</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/hsq1emzxgsru')">Ver Capitulo 9</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/piht5yxsihdg')">Ver Capitulo 10</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/7isifnzdp5st')">Ver Capitulo 11</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/8cnk6245kbri')">Ver Capitulo 12</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/vd598ggrjwzb')">Ver Capitulo 13</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/n15nzbdy5420')">Ver Capitulo 14</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/95zckrr7u77t')">Ver Capitulo 15</button>
+                        <button onclick="reproducirIframe('https://fastbrisk.com/e/0cf96t823xv2')">Ver Capitulo 16</button>
+        </div>
         
+    </div>
+    <div class="movie-box">
+        <img src="Dragon Ball Daima.jfif" alt="Dragon Ball Daima">
+        <button onclick="toggleChapters('Dragon Ball Daima')">Ver Dragon Ball Daima</button>
+        <div id="Dragon Ball Daima-chapters" style="display:none;">
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/24yfjb2c6gqi')">Ver Capitulo 1</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/bp0z3j5n4byv')">Ver Capitulo 2</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/laxbpnf8tkv1')">Ver Capitulo 3</button> 
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/6xdhlkrgsjyo')">Ver Capitulo 4</button> 
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/yev02lmmzszz')">Ver Capitulo 5</button> 
+            <button onclick="reproducirIframe('https://uqload.net/embed-foyrfysh3aif.html')">Ver Capitulo 5</button> 
+        </div>
+    </div>
+    <div class="movie-box">
+        <img src="bety.jfif" alt="Betty la fea, la historia continúa">
+        <button onclick="toggleChapters('Betty la fea, la historia continúa')">Ver Betty la fea, la historia continúa</button>
+        <div id="Betty la fea, la historia continúa-chapters" style="display:none;">
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/6ceksl2zh2pq')">Ver Capitulo 1</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/w7nark5xtbf2')">Ver Capitulo 2</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/ctqsq6q78zs3')">Ver Capitulo 3</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/agnkrmdvho9u')">Ver Capitulo 4</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/a37u5uiq3t4g')">Ver Capitulo 5</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/rbricgrzuxdm')">Ver Capitulo 6</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/r4bbdr2l447f')">Ver Capitulo 7</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/4mzcavu5kfpr')">Ver Capitulo 8</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/pnhehn9pztmz')">Ver Capitulo 9</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/wo3hrdhy32zy')">Ver Capitulo 10</button>
+        </div>
+    </div>
+    <div class="movie-box">
+        <img src="what if.jfif" alt="What if">
+        <button onclick="toggleChapters('What if')">Ver What if</button>
+        <div id="What if-chapters" style="display:none;">
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/dzwc5zjmy6sb')">Ver Capitulo 1</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/dkbr1i65o0pf')">Ver Capitulo 2</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/94tvlzxi6jc8')">Ver Capitulo 3</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/lsyl091gkh0i')">Ver Capitulo 4</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/2da0qgx0ojij')">Ver Capitulo 5</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/du91786axaq1')">Ver Capitulo 6</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/912qv85fj1y8')">Ver Capitulo 7</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/lnskpafew03v')">Ver Capitulo 8</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/0gcl91abt0nq')">Ver Capitulo 9</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/viylhxbvzsr2')">Ver Capitulo 10</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/bqdl5djpcue8')">Ver Capitulo 11</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/5la5mz3wyy9y')">Ver Capitulo 12</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/6m3fomp2h6s7')">Ver Capitulo 13</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/bytd6ydpd1a3')">Ver Capitulo 14</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/5apd29oexw5z')">Ver Capitulo 15</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/bhf11dedhgam')">Ver Capitulo 16</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/jrzawa6qzcid')">Ver Capitulo 17</button>
+            <button onclick="reproducirIframe('https://fastbrisk.com/e/5zbsav9lbt8o')">Ver Capitulo 18</button>
+        </div>
+    </div>
+
+    
+</div>
 
     <!-- Reproductor M3U8 -->
     <div id="video-player-container">
@@ -399,9 +604,15 @@ button:hover, button:focus {
         <span class="control-button close-button" onclick="cerrarIframe()">✖</span>
         <span class="control-button tv-button" onclick="toggleMenu()">📺</span>
         <iframe id="iframe-player" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
-
-        
+ 
     </div>
+    <!-- Contenedor del Reproductor -->
+    <div id="videoContainer">
+        <span id="closeVideoIcon" class="close-icon" onclick="closeVideo()">✖</span>
+        <iframe id="videoFrame" sandbox="allow-same-origin allow-scripts allow-presentation" allowfullscreen allow="autoplay"></iframe>
+    </div>
+    
+    
 
     <!-- Menú de canales flotante accesible desde ambos reproductores -->
     <div class="channel-menu" id="channel-menu">
@@ -423,6 +634,8 @@ button:hover, button:focus {
                 <button onclick="reproducirIframe('https://nebunexa.co/red/?get=https://embed.sdfgnksbounce.com/embed/cartoonnetwork.html')">Cartoon Network 3</button>
         <button onclick="reproducirIframe('https://embed.sdfgnksbounce.com/embed2/golperu.html')">Gol Peru</button>
     </div>
+
+    
 
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
     <script>
@@ -526,6 +739,46 @@ function logout() {
             const menu = document.getElementById('channel-menu');
             menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
         }
+        // Mostrar el reproductor y cargar el video
+function playVideo(url) {
+    const videoContainer = document.getElementById('videoContainer');
+    const videoFrame = document.getElementById('videoFrame');
+
+    // Mostrar el contenedor del video
+    videoContainer.style.display = 'block';
+    videoFrame.src = url;
+
+    // Solicitar pantalla completa
+    if (videoContainer.requestFullscreen) {
+        videoContainer.requestFullscreen();
+    } else if (videoContainer.webkitRequestFullscreen) {
+        videoContainer.webkitRequestFullscreen();
+    } else if (videoContainer.msRequestFullscreen) {
+        videoContainer.msRequestFullscreen();
+    }
+}
+
+// Cerrar el reproductor
+function closeVideo() {
+    const videoContainer = document.getElementById('videoContainer');
+    const videoFrame = document.getElementById('videoFrame');
+
+    // Ocultar el contenedor y limpiar el contenido del iframe
+    videoContainer.style.display = 'none';
+    videoFrame.src = '';
+
+    // Salir del modo de pantalla completa si está activo
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+}
+
     </script>
 
 </body>

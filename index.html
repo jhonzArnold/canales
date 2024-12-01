@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrotamundoTv</title>
+    <title>LatinoTv</title>
     <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
     <style>
         body {
@@ -111,8 +111,8 @@ body, html {
         /* Contenedor de canales y películas */
    
     .channel-box, .movie-box {
-        background-color: #050505;
-        border: 1px solid black;
+        background-color: #4a6e5a;
+        border: 8px solid black;
         border-radius: 8px;
         text-align: center;
         padding: 10px;
@@ -127,7 +127,7 @@ body, html {
         border-radius: 4px;
     }
     .channel-box button, .movie-box button {
-        background-color: #000;
+        background-color: #353392;
         color: white;
         font-size: 16px;
         cursor: pointer;
@@ -162,7 +162,7 @@ body, html {
     transition: box-shadow 0.3s ease; /* Transición para la retroiluminación */
 }
 button:hover, button:focus {
-    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6); /* Retroiluminación al pasar el cursor o enfocar */
+    box-shadow: 0 0 10px 15px rgba(204, 44, 4, 0.6); /* Retroiluminación al pasar el cursor o enfocar */
 }
         /* Reproductor de video en pantalla completa */
         #video-player-container,
@@ -267,7 +267,7 @@ button:hover, button:focus {
     <!-- Main content -->
     <div class="main-container" style="display:none;">
         <div class="nav-container">
-            <h1>TrotamundoTv</h1>
+            <h1>LatinoTv</h1>
             <div class="button-container">
                 <button onclick="showSection('inicio')">Inicio</button>
                 <button onclick="showSection('canales')">Canales</button>
@@ -280,9 +280,9 @@ button:hover, button:focus {
         <!-- Inicio (Carrusel) -->
         <div class="content-container" id="inicio" style="display: flex;">
             <div class="carousel">
-                <img src="halo.jfif" alt="Imagen 1" class="carousel-img active">
+                <img src="ble.avif" alt="Imagen 1" class="carousel-img active">
                 <img src="lia.jfif" alt="Imagen 2" class="carousel-img">
-                <img src="canaa.jpg" alt="Imagen 3" class="carousel-img">
+                <img src="dad.jpg" alt="Imagen 3" class="carousel-img">
             </div>
         </div>
 
@@ -422,96 +422,233 @@ button:hover, button:focus {
         <!-- Películas -->
         <div class="content-container" id="peliculas">
             <div class="movie-box">
+                <img src="garf.jpg" alt="Garfield">
+                <button onclick="playVideo('https://drive.google.com/file/d/1YHPjhTwgUgVUwlVMobRq_ibBvfvQ21EZ/preview')">Ver Garfield</button>
+                
+            </div>
+            <div class="movie-box">
+                <img src="ve2.jfif" alt="Venom2">
+                <button onclick="reproducirIframe('https://dood.li/e/aiy8dpouit3r')">Ver Venom2</button>
+                <button onclick="reproducirIframe('https://uqload.net/embed-ob5wdepjw1d0.html')">Ver Venom2</button>
+                
+            </div>
+            <div class="movie-box">
+                <img src="Venom3.jfif" alt="Venom3">
+                <button onclick="reproducirIframe('https://dood.li/e/gofq7qjwjqxu')">Ver Venom3</button>
+                <button onclick="reproducirIframe('https://vidhidefast.com/v/lxni6eh6v7ds')">Ver Venom3</button>
+                <button onclick="reproducirIframe('https://jamessoundcost.com/e/flwwk57y8ahu')">Ver Venom3</button>
+                <button onclick="reproducirIframe('https://file-zz40pd56-embed.com/ptsd/72myg6wew02b?referer=www18.pelisplushd.to')">Ver Venom3</button>
+            </div>
+            <div class="movie-box">
                 <img src="robot.jfif" alt="Robot salvaje">
                 <button onclick="playVideo('https://drive.google.com/file/d/1YHPjhTwgUgVUwlVMobRq_ibBvfvQ21EZ/preview')">Ver Robot salvaje HD</button>
+        
+            </div>
+            <div class="movie-box">
+                <img src="terr1.jfif" alt="Terrifer2">
+                <button onclick="reproducirIframe('https://hlswish.com/e/fwqda2ztwl53')">Ver Terrifer2</button>
+            </div>
+            <div class="movie-box">
+                <img src="terr.jpg" alt="Terrifer3">
+                <button onclick="reproducirIframe('https://hlswish.com/e/qmr8qq3vg1wi')">Ver Terrifer3(español-cn anuncio)</button>
+                <button onclick="reproducirIframe('https://hlswish.com/e/scxo1sq1nkno')">Ver Terrifer3(subtitulado)</button>
+            </div>
+            <div class="movie-box">
+                <img src="La Sustancia.jfif" alt="La Sustancia">
+                <button onclick="reproducirIframe('https://vidhidefast.com/v/hvz71jnjbfip')">Ver La Sustancia</button>
+                <button onclick="reproducirIframe('https://dood.li/e/pv7kctqc80mx')">Ver La Sustancia</button>
+
+                <button onclick="reproducirIframe('https://nuuuppp.pro/wathcpremium/ULz5nE8TiUeJ7kz7Kxw0Yj0sBC8gxGe3jz3K3jz38IuQv6fYpAxk?h=')">Ver La Sustancia</button>
             </div>
             <div class="movie-box">
                 <img src="al.jpeg" alt="Alien: Romulus">
                 <button onclick="playVideo('https://drive.google.com/file/d/1xaBLnuQ6BY4LFYFwomxI3qqxxOndBWMu/preview')">Ver Alien: Romulus HD</button>
             </div>
             <div class="movie-box">
-                <img src="dea.jpg" alt="deadl pol y wolvenrin">
-                <button onclick="playVideo('https://drive.google.com/file/d/13bK59tDEbHv2nKrNDFZ8a0_ZPp8jMcei/preview')">Ver deadl pol y wolvenrin HD</button>
+                <img src="yoa.jfif" alt="Yo antes de ti">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/mbj6m7jgue2c')">Ver Yo antes de ti</button>
+            </div>
+            <div class="movie-box">
+                <img src="Aquaman y el reino perdido.jfif" alt="aquaman3">
+                <button onclick="reproducirIframe('https://asnwish.com/e/zidnda5xvskl')">Ver aquaman3</button>
+            </div>
+            <div class="movie-box">
+                <img src="wonka.jfif" alt="wonka">
+                <button onclick="reproducirIframe('https://asnwish.com/e/1gtafknvymij')">Ver wonka</button>
+            </div>
+            <div class="movie-box">
+                <img src="Kung Fu Panda 4.jfif" alt="kunfu panda4">
+                <button onclick="reproducirIframe('https://jodwish.com/e/qfmi115yrwg8')">Ver kunfu panda4</button>
+            </div>
+            <div class="movie-box">
+                <img src="blue beete.jfif" alt="blue beete">
+                <button onclick="reproducirIframe('https://jodwish.com/e/qfmi115yrwg8')">Ver blue beete</button>
+            </div>
+            <div class="movie-box">
+                <img src="rompe.jfif" alt="Rompe el circulo">
+                <button onclick="reproducirIframe('https://playerwish.com/e/l138ujc8s49q')">Ver Rompe el circulo</button>
+            </div>
+            <div class="movie-box">
+                <img src="simi.jpg" alt="el reino de los simios">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/kfqw8uluja30')">Ver el reino de los simios</button>
+            </div>
+            <div class="movie-box">
+                <img src="kunfu.jfif" alt="Kunfu panda4">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/kfqw8uluja30')">Ver Kunfu panda4</button>
+            </div>
+            <div class="movie-box">
+                <img src="Maverick.jfif" alt="Maverick3">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/13ix4v1ubhno')">Ver Maverick3</button>
+            </div>
+            <div class="movie-box">
+                <img src="sonrie 2.jfif" alt="sonrie 2">
+                <button onclick="reproducirIframe('https://hlswish.com/e/qvctrkg5gvgo')">Ver sonrie 2</button>
             </div>
             <div class="movie-box">
                 <img src="mi villano.jfif" alt="mi villano favorito4">
-                <button onclick="playVideo('https://drive.google.com/file/d/1e0QvLNCNzc7O1jH7kpgF8PtZ4zvyIhfl/preview')">Ver mi villano favorito4 HD</button>
+                <button onclick="reproducirIframe('https://wishonly.site/e/giowv1nifc8l')">Ver mi villano favorito4</button>
             </div>
             <div class="movie-box">
-                <img src="jocker2.png" alt="Jocker2">
-                <button onclick="playVideo('https://drive.google.com/file/d/16d5sT9Hfrw_b2--DTCJmmQpfVFoyaTbN/preview')">Ver Jocker2 HD</button>
+                <img src="intensamente2.jfif" alt="intensamente2">
+                <button onclick="reproducirIframe('https://wishonly.site/e/b132rbzrg2su')">Ver intensamente2</button>
             </div>
             <div class="movie-box">
-                <img src="La Sustancia.jfif" alt="La Sustancia">
-                <button onclick="playVideo('https://drive.google.com/file/d/1JslcvRN0o3ml_ZJKakCWSFNhef9wSYD9/preview')">Ver La Sustancia HD</button>
+                <img src="Wish.jfif" alt="Wish: El Poder De Los Deseos">
+                <button onclick="reproducirIframe('https://asnwish.com/e/k6n1mdoo0x1j')">Ver Wish: El Poder De Los Deseos</button>
             </div>
             <div class="movie-box">
-                <img src="terr.jpg" alt="Terrifer3">
-                <button onclick="playVideo('https://drive.google.com/file/d/1C4K4NcFk-B8nJBKijDrz2UWmU4FO1VF-/preview')">Ver Terrifer3(aun d cine)</button>
+                <img src="La Sociedad De La Nieve.jfif" alt="La Sociedad De La Nieve">
+                <button onclick="reproducirIframe('https://vi2.co/player/1/0/?v=6382504')">Ver La Sociedad De La Nieve</button>
+            </div>
+            <div class="movie-box">
+                <img src="La decisión mas dificil.jfif" alt="La decisión mas dificil">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/gy6xpz0nkrj0')">Ver La decisión mas dificil</button>
+            </div>
+            <div class="movie-box">
+                <img src="el astronauta.jpg" alt="El astronauta">
+                <button onclick="reproducirIframe('https://playerwish.com/e/z0ngh0mg4n3j')">Ver El astronauta</button>
+            </div>
+            <div class="movie-box">
+                <img src="atlas.jpg" alt="Atlas">
+                <button onclick="reproducirIframe('https://swhoi.com/e/8mqms988knjk')">Ver Atlas</button>
             </div>
             <div class="movie-box">
                 <img src="coco.jpg" alt="Coco">
-                <button onclick="playVideo('https://drive.google.com/file/d/1_O_g9EwuZJP5nYhGXwVXiO2hq35y88VG/preview')">Ver Coco HD</button>
+                <button onclick="reproducirIframe('https://nuuuppp.pro/wathcpremium/boIzhZQS1SAj8sUmqlmoqIS2eJ0osIe8DYhgZsdNt6I?h=')">Ver Coco</button>
+                
             </div>
             <div class="movie-box">
-                <img src="garf.jpg" alt="Garfield">
-                <button onclick="playVideo('https://drive.google.com/file/d/1chXd27dnv78IeLl87yn55Db0AEmsBRsV/preview')">Ver Garfield HD</button> 
+                <img src="hasta el ultimo hombre.jfif" alt="Hasta el ultimo hombre">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/zoukm4p5vorz')">Ver Hasta el ultimo hombre</button>
             </div>
             <div class="movie-box">
-                <img src="rompe.jfif"  alt="Romper el circulo">
-                <button onclick="playVideo('https://drive.google.com/file/d/1daWjAZl8BonqJKaaRjM36t3GWsF7c6t0/preview')">Ver Romper el circulo(aun de cine)</button> 
+                <img src="lado1.jfif" alt="Siempre a tu lado 1">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/2yi0z3hae03t')">Ver Siempre a tu lado 1</button>
             </div>
             <div class="movie-box">
-                <img src="yoa.jfif"   alt="Yo antes de ti">
-                <button onclick="playVideo('https://drive.google.com/file/d/1DqNxDGS6_DnREztIi0wwPGX8EY5TuyyE/preview')">Ver Yo antes de ti (baja caldidad)</button> 
+                <img src="lado2.jfif" alt="Siempre a tu lado 2">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/xbphaz1tcdq3')">Ver Siempre a tu lado 2</button>
             </div>
             <div class="movie-box">
-                <img src="intensamente2.jfif"   alt="Intensamente2">
-                <button onclick="playVideo('https://drive.google.com/file/d/13fmXe_2RkDZs2NsxddYSmU5e9LQBKKGK/preview')">Ver Intensamente2 (baja caldidad)</button> 
+                <img src="Barbie.jfif" alt="Barbi">
+                <button onclick="reproducirIframe('https://wishfast.top/e/xloapluq02wh')">Ver Barbi</button>
             </div>
             <div class="movie-box">
-                <img src="wonka.jfif"   alt="Wonka">
-                <button onclick="playVideo('https://drive.google.com/file/d/1Q2waO0hIC_3BeEQZH4qckcn5PzZwPQ0G/preview')">Ver Wonka </button> 
+                <img src="win.jpg" alt="Winnie De Pooh: Miel Y Sangre 2">
+                <button onclick="reproducirIframe('https://hlswish.com/e/39xlw5shwsf7')">Ver Winnie De Pooh: Miel Y Sangre 2</button>
             </div>
             <div class="movie-box">
-                <img src="bad.jpg"   alt="bad boy 2">
-                <button onclick="playVideo('https://drive.google.com/file/d/11_dVAe--8McH9tX32CtluM4xGavtAUcR/preview')">Ver bad boy 2 </button> 
+                <img src="wii.jpg" alt="Winnie De Pooh: Miel Y Sangre 1">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/az4uceaepvgh')">Ver Winnie De Pooh: Miel Y Sangre 1</button>
             </div>
             <div class="movie-box">
-                <img src="god.jpeg"  alt="Godzilla vs kong">
-                <button onclick="playVideo('https://drive.google.com/file/d/1RMjNYz0jCtuqWLhxRhvBcMGacyhQoeqq/preview')">Ver Godzilla vs kong </button> 
+                <img src="sound.jfif" alt="Sound Of Freedom">
+                <button onclick="reproducirIframe('https://wishfast.top/e/xz115shhcp03')">Ver Sound Of Freedom</button>
             </div>
             <div class="movie-box">
-                <img src="grana.jfif"   alt="Gran Turismo">
-                <button onclick="playVideo('https://drive.google.com/file/d/1ppD0Fn7Jw0ZLBIDyVeLMt-quhFYc4qbo/preview')">Ver Gran Turismo</button> 
+                <img src="dea.jpg" alt="deadl pol y wolvenrin">
+                <button onclick="reproducirIframe('https://playerwish.com/e/akzfn5wu8e5d')">Ver deadl pol y wolvenrin</button>
             </div>
             <div class="movie-box">
-                <img src="Kung Fu Panda 4.jfif"   alt="Kunfu Panda 4">
-                <button onclick="playVideo('hhttps://drive.google.com/file/d/1XwtAvXR8M7lDLUoGNAGrwYRyU63eQbms/preview')">Ver Kunfu Panda 4</button> 
+                <img src="god.jpeg" alt="godzila y kin kon">
+                <button onclick="reproducirIframe('https://swhoi.com/e/t335ff60roan')">Ver godzila y kin kon</button>
             </div>
             <div class="movie-box">
-                <img src="look.jfif"   alt="Look Back">
-                <button onclick="playVideo('https://drive.google.com/file/d/1BQO7QmN9WsXpIg7a6G45N4U_aIpDMCn7/preview')">Ver Look Back</button> 
+                <img src="blac.jfif" alt="blak adan">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/xrbmd298q3wk')">Ver blak adan</button>
             </div>
             <div class="movie-box">
-                <img src="sonrie 2.jfif"   alt="Sonrie 2">
-                <button onclick="playVideo('https://drive.google.com/file/d/10i-PsiHigYrKQAcJ8dsnZdv0uLND-AG3/preview')">Ver Sonrie 2</button> 
+                <img src="bros.jfif" alt="mario bros">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/sar55ga3mtu5')">Ver mario bros</button>
             </div>
             <div class="movie-box">
-                <img src="win.jpg"   alt="Winniw de Pooh 2">
-                <button onclick="playVideo('https://drive.google.com/file/d/1-sFNUsG4aE1TkmlBLSDYCnburZUX6DF5/preview')">Ver Winniw de Pooh 2</button> 
+                <img src="me2.jfif" alt="megalodon 2">
+                <button onclick="reproducirIframe('https://embedwish.com/e/ia4e0wz7vxs2')">Ver megalodon 2</button>
             </div>
             <div class="movie-box">
-                <img src="Wish.jfif"   alt="Wish">
-                <button onclick="playVideo('https://drive.google.com/file/d/1UjYqdS4J1Ux9vteE4pSrfcxhL0qi9jne/preview')">Ver Wish </button> 
+                <img src="me1.jfif" alt="megalodon 1">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/u9bpq5mk312d')">Ver megalodon 1</button>
             </div>
-
-
-
-
-
-
-
+            <div class="movie-box">
+                <img src="trasforme.jfif" alt="trasformer el despertar">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/b0cshknwtyi0')">Ver trasformer el despertar</button>
+            </div>
+            <div class="movie-box">
+                <img src="Oppenheimer.jfif" alt="Oppenheimer">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/j2hwb82ugot8')">Ver Oppenheimer</button>
+            </div>
+            <div class="movie-box">
+                <img src="mi22.jfif" alt="mision rescate 2">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/rfxbjk5k6zei')">Ver mision rescate 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="mi1.jfif" alt="mision rescate 1">
+                <button onclick="reproducirIframe('https://d0000d.com/e/ppmdlmwnzkt9')">Ver mision rescate 1</button>
+            </div>
+            <div class="movie-box">
+                <img src="yo.jfif" alt="jhon wik 4">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/k4679su2njdk')">Ver jhon wik 4</button>
+            </div>
+            <div class="movie-box">
+                <img src="cho.jpg" alt="Chabuca">
+                <button onclick="reproducirIframe('https://cdnplaypro.com/e/ap4r4jtogkl3')">ver Chabuca</button>
+            </div>
+            <div class="movie-box">
+                <img src="bad.jpg" alt="Bad Boys: Hasta la muerte 2">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/c5l9l9zz0gqo')">ver Bad Boys: Hasta la muerte 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="bad boy1.jfif" alt="Bad Boys: Hasta la muerte 1">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/i18zya070bln')">ver Bad Boys: Hasta la muerte 1</button>
+            </div>
+            <div class="movie-box">
+                <img src="beat.jfif" alt="Beetlejuice 2">
+                <button onclick="reproducirIframe('https://hlswish.com/e/b1b5bzeg5sp9')">ver Beetlejuice 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="The Flash.jfif" alt="The Flash">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/5ytjyrwbhm08')">ver The Flash</button>
+            </div>
+            <div class="movie-box">
+                <img src="endgame.jfif" alt="Avengers: Endgame">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/pbzadhot777m')">ver Avengers: Endgame</button>
+            </div>
+            <div class="movie-box">
+                <img src="infiniti.jfif" alt="Avengers: Infinity War">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/zobkkb8wwnx1')">ver Avengers: Infinity War</button>
+            </div>
+            <div class="movie-box">
+                <img src="cap3.jfif" alt="Capitán América 3: Civil War ">
+                <button onclick="reproducirIframe('https://playerwish.com/e/iijxrq5urm1i')">ver Capitán América 3: Civil War </button>
+            </div>
+            <div class="movie-box">
+                <img src="cap2.jfif" alt="Capitán América 2 ">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/glw0l58k1mut')">ver Capitán América 2</button>
+            </div>
+            <div class="movie-box">
+                <img src="cap1.jfif" alt="Capitán América 1 ">
+                <button onclick="reproducirIframe('https://fastbrisk.com/e/f7yqjvvzynqi')">ver Capitán América 1 </button>
+            </div>
 
 
 
@@ -738,7 +875,7 @@ function logout() {
                 images.forEach(img => img.classList.remove('active'));
                 images[index].classList.add('active');
                 index = (index + 1) % images.length;
-            }, 3000);
+            }, 800);
         }
 
         function reproducirM3U8(enlaceM3U8) {

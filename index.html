@@ -256,8 +256,8 @@ body {
         }
         canvas {
             display: block;
-            width: 75vw;
-            height: 75vh;
+            width: 70vw;
+            height: 70vh;
         }
         .controls {
             position: absolute;
@@ -1006,9 +1006,15 @@ function logout() {
         };
 
         function showSection(section) {
-            document.querySelectorAll('.content-container').forEach(el => el.style.display = 'none');
-            document.getElementById(section).style.display = 'flex';
+        document.querySelectorAll('.content-container').forEach(el => el.style.display = 'none');
+        const selectedSection = document.getElementById(section);
+        selectedSection.style.display = 'flex';
+
+        // Iniciar el juego solo si se selecciona la sección "Juego"
+        if (section === 'Juego') {
+            startGame(); // Llama a la función para iniciar el juego
         }
+    }
         function toggleChapters(series) {
             const chapters = document.getElementById(series + '-chapters');
             chapters.style.display = chapters.style.display === 'none' ? 'block' : 'none';

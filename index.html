@@ -248,63 +248,7 @@ button:hover, button:focus {
     color: red; /* Cambia el color al pasar el cursor */
     transform: scale(1.2); /* Agranda ligeramente el ícono */
 }
-/*incio del juego */
-body {
-            margin: 0;
-            background-color: #f0f0f0;
-            overflow: hidden;
-        }
-        canvas {
-            display: block;
-            width: 70vw;
-            height: 70vh;
-        }
-        .controls {
-            position: absolute;
-            bottom: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 3vw; /* Aumenta el espacio entre los botones */
-            width: 100%;
-        }
-        .controls button {
-            width: 15vw;
-            height: 15vw;
-            max-width: 100px;
-            max-height: 100px;
-            border: none;
-            border-radius: 50%;
-            background-color: rgba(0, 123, 255, 0.7); /* Fondo traslúcido */
-            color: white;
-            font-size: 3vw; /* Aumenta el tamaño de la fuente */
-            cursor: pointer;
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-            transition: background-color 0.3s, transform 0.2s; /* Animación de transición */
-        }
-        .controls button:active {
-            background-color: rgba(0, 86, 179, 0.7); /* Color más oscuro al presionar */
-            transform: scale(0.95); /* Efecto de reducción al hacer clic */
-        }
-        .info {
-    position: absolute;
-    top: 10px; /* Ajusta la posición vertical */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 15px;
-    font-size: 3vw; /* Aumenta el tamaño de la fuente */
-    font-weight: bold;
-    background-color: rgba(194, 13, 13, 1); /* Fondo semi-translúcido */
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
-    z-index: 10; /* Asegúrate de que esté por encima del canvas */
-}
 
-        .info span {
-            display: inline-block;
-        }
-        /*final del juego */
     </style>
 </head>
 <body>
@@ -328,7 +272,7 @@ body {
                 <button onclick="showSection('canales')">Canales</button>
                 <button onclick="showSection('peliculas')">Películas</button>
                 <button onclick="showSection('Series')">Series</button>
-                <button onclick="showSection('Juego')">Juego</button>
+              
                 <button class="logout-button" onclick="logout()">Cerrar Sesión</button> <!-- Botón de cerrar sesión -->
             </div>
         </div>
@@ -766,20 +710,7 @@ body {
     
 </div>
 /
- <!-- Juego -->
-<div class="content-container" id="Juego">
-    <canvas id="maze"></canvas>
-    <div class="info">
-        <span id="timer">Tiempo: 60</span>
-        <span id="level">Nivel: 1</span>
-    </div>
-    <div class="controls">
-        <button id="up">⬆</button>
-        <button id="left">⬅</button>
-        <button id="down">⬇</button>
-        <button id="right">➡</button>
-    </div>
-</div>
+
 
 
     <!-- Reproductor M3U8 -->
@@ -829,155 +760,7 @@ body {
 
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
     <script>
-        //inicio del juego //
-        const canvas = document.getElementById('maze');
-        const ctx = canvas.getContext('2d');
-        const timerDisplay = document.getElementById('timer');
-        const levelDisplay = document.getElementById('level');
-
-        let level = 1;
-        let maze = [];
-        let player = { x: 0, y: 0, radius: 0 };
-        let goal = { x: 0, y: 0 };
-        let timeRemaining = 60;
-        let timerInterval;
-        let cellSize;
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            cellSize = Math.min(canvas.width, canvas.height) / 20;
-            player.radius = cellSize / 3;
-        }
-
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
-
-        function generateMaze(rows, cols) {
-            const maze = Array(rows).fill(null).map(() => Array(cols).fill(1));
-
-            function carvePath(x, y) {
-                const directions = [
-                    [0, -1], [1, 0], [0, 1], [-1, 0] // up, right, down, left
-                ];
-                directions.sort(() => Math.random() - 0.5);
-
-                for (const [dx, dy] of directions) {
-                    const nx = x + dx * 2;
-                    const ny = y + dy * 2;
-
-                    if (nx > 0 && ny > 0 && nx < cols && ny < rows && maze[ny][nx] === 1) {
-                        maze[y + dy][x + dx] = 0;
-                        maze[ny][nx] = 0;
-                        carvePath(nx, ny);
-                    }
-                }
-            }
-
-            maze[1][1] = 0;
-            carvePath(1, 1);
-
-            // Add random dead ends to confuse players
-            for (let i = 0; i < rows * cols * 0.2; i++) {
-                const rx = Math.floor(Math.random() * cols);
-                const ry = Math.floor(Math.random() * rows);
-                if (maze[ry][rx] === 1) {
-                    maze[ry][rx] = 0;
-                }
-            }
-
-            return maze;
-        }
-
-        function drawMaze() {
-            const rows = maze.length;
-            const cols = maze[0].length;
-
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            for (let y = 0; y < rows; y++) {
-                for (let x = 0; x < cols; x++) {
-                    ctx.fillStyle = maze[y][x] === 1 ? 'black' : 'white';
-                    ctx.fillRect(x * cellSize, y * cellSize, cellSize, cellSize);
-                }
-            }
-
-            // Draw player
-            ctx.fillStyle = 'blue';
-            ctx.beginPath();
-            ctx.arc(
-                player.x * cellSize + cellSize / 2,
-                player.y * cellSize + cellSize / 2,
-                player.radius,
-                0,
-                Math.PI * 2
-            );
-            ctx.fill();
-
-            // Draw goal
-            ctx.fillStyle = 'green';
-            ctx.fillRect(goal.x * cellSize, goal.y * cellSize, cellSize, cellSize);
-        }
-
-        function movePlayer(dx, dy) {
-            const newX = player.x + dx;
-            const newY = player.y + dy;
-
-            if (
-                newX >= 0 &&
-                newX < maze[0].length &&
-                newY >= 0 &&
-                newY < maze.length &&
-                maze[newY][newX] === 0
-            ) {
-                player.x = newX;
-                player.y = newY;
-
-                if (player.x === goal.x && player.y === goal.y) {
-                    level++;
-                    levelDisplay.textContent = `Nivel: ${level}`;
-                    clearInterval(timerInterval);
-                    startGame();
-                }
-
-                drawMaze();
-            }
-        }
-
-        function startTimer() {
-            timeRemaining = 60;
-            timerDisplay.textContent = `Tiempo: ${timeRemaining}`;
-            clearInterval(timerInterval);
-            timerInterval = setInterval(() => {
-                timeRemaining--;
-                timerDisplay.textContent = `Tiempo: ${timeRemaining}`;
-                if (timeRemaining <= 0) {
-                    clearInterval(timerInterval);
-                    alert('¡Perdiste! Inténtalo de nuevo.');
-                    startGame();
-                }
-            }, 1000);
-        }
-
-        function startGame() {
-            const rows = Math.floor(canvas.height / cellSize);
-            const cols = Math.floor(canvas.width / cellSize);
-            maze = generateMaze(rows, cols);
-            player.x = 1;
-            player.y = 1;
-            goal.x = cols - 2;
-            goal.y = rows - 2;
-            startTimer();
-            drawMaze();
-        }
-
-        document.getElementById('up').addEventListener('click', () => movePlayer(0, -1));
-        document.getElementById('down').addEventListener('click', () => movePlayer(0, 1));
-        document.getElementById('left').addEventListener('click', () => movePlayer(-1, 0));
-        document.getElementById('right').addEventListener('click', () => movePlayer(1, 0));
-
-        startGame();
-        //final del juego //
+        
         function login() 
         {
     const id = document.getElementById("id").value;

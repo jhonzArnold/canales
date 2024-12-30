@@ -35,7 +35,7 @@
             border-radius: 8px;
             color: white;
             max-width: 400px;
-            width: 100%;
+            width: 90%;
         }
         .login-box input, .login-box button {
             padding: 10px;
@@ -52,7 +52,7 @@
         .button-container {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            
         }
         /* Configuración general para eliminar espacios en blanco */
 * {
@@ -120,6 +120,9 @@ body, html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%; /* Ajuste para móviles */
+            max-width: 150px; /* Limita el ancho en pantallas grandes */
+            margin: 10px; /* Espaciado entre cajas */
     }
     .channel-box img, .movie-box img {
         width: 100%;
@@ -179,6 +182,14 @@ button:hover, button:focus {
         #video-player, #iframe-player {
             width: 100%;
             height: 100%;
+        }
+       .controls {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 3vw;
+            width: 100%;
         }
         /* Botones de control */
         .control-button {
@@ -248,7 +259,6 @@ button:hover, button:focus {
     color: red; /* Cambia el color al pasar el cursor */
     transform: scale(1.2); /* Agranda ligeramente el ícono */
 }
-
     </style>
 </head>
 <body>
@@ -272,7 +282,6 @@ button:hover, button:focus {
                 <button onclick="showSection('canales')">Canales</button>
                 <button onclick="showSection('peliculas')">Películas</button>
                 <button onclick="showSection('Series')">Series</button>
-              
                 <button class="logout-button" onclick="logout()">Cerrar Sesión</button> <!-- Botón de cerrar sesión -->
             </div>
         </div>
@@ -565,28 +574,26 @@ button:hover, button:focus {
             </div> 
 
 
-
-
-
-
-
-
-
-
-
         </div>
     </div>
     <!-- Series -->
     <div class="content-container" id="Series">
         <div class="movie-box">
-            <img src="simp.jfif" alt="Los simpson">
-            <button onclick="toggleChapters('Los simpson')">Ver Los simpson</button>
-            <div id="Los simpson-chapters" style="display:none;">
-                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am1')">Ver Capitulos 1</button>
-                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am2')">Ver Capitulos 2</button>
-                <button onclick="reproducirIframe('https://nuuuppp.pro/watch/am3')">Ver Capitulos 3</button>
+            <img src="calamar2.jpg" alt="Juego de calamar 2">
+            <button onclick="toggleChapters('Juego de calamar 2')">Ver Juego de calamar 2</button>
+            <div id="Juego de calamar 2-chapters" style="display:none;">
+                
+        
+                <button onclick="playVideo('https://drive.google.com/file/d/1bZdMwa4DrsXNa9Sx2nHPU-ROjrPxdBuk/preview')">Ver Capitulos 1</button>
+                <button onclick="playVideo('https://drive.google.com/file/d/1TofkPg4K1Dvn4QnpCUrcjnOPgx76qu3y/preview')">Ver Capitulos 2</button>
+                <button onclick="playVideo('https://drive.google.com/file/d/1ddr_oSJurY65St9BVcJYp9iMjAOKVm0B/preview')">Ver Capitulos 3</button>
+                <button onclick="playVideo('https://drive.google.com/file/d/1KXZyUPQGtqS7n0TA1ofJUgWx4KNkP_UD/preview')">Ver Capitulos 4</button>
+                <button onclick="playVideo('https://drive.google.com/file/d/1SOISWXdAjtvkcU6NEJdL0Vww61Mc_pFG/preview')">Ver Capitulos 5</button>
+                <button onclick="playVideo('https://drive.google.com/file/d/1wGQs-V-N9yYIgxD7YPcEIR616hSqyUNl/preview')">Ver Capitulos 6</button>
+                <button onclick="playVideo('https://drive.google.com/file/d/1-ONiHw1p_xcude5dYmxGRWqDBP0F-Toh/preview')">Ver Capitulos 7</button>
             </div>
         </div>
+
             <div class="movie-box">
                 <img src="simp_terror.jpg" alt="Los simpson La casita de Terror">
                 <button onclick="toggleChapters('Los simpson La casita de Terror')">Ver Los simpson La casita de Terror</button>
@@ -686,7 +693,7 @@ button:hover, button:focus {
         <img src="what if.jfif" alt="What if">
         <button onclick="toggleChapters('What if')">Ver What if</button>
         <div id="What if-chapters" style="display:none;">
-            <button onclick="reproducirIframe('https://fastbrisk.com/e/dzwc5zjmy6sb')">Ver Capitulo 1</button>
+            <button onclick="reproducirIframe('https://iplayerhls.com/e/g0ridq7xhc5d')">Ver Capitulo 1</button>
             <button onclick="reproducirIframe('https://fastbrisk.com/e/dkbr1i65o0pf')">Ver Capitulo 2</button>
             <button onclick="reproducirIframe('https://fastbrisk.com/e/94tvlzxi6jc8')">Ver Capitulo 3</button>
             <button onclick="reproducirIframe('https://fastbrisk.com/e/lsyl091gkh0i')">Ver Capitulo 4</button>
@@ -760,7 +767,6 @@ button:hover, button:focus {
 
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
     <script>
-        
         function login() 
         {
     const id = document.getElementById("id").value;
